@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+
+        <!-- ionic/angularjs js -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+        <script src="lib/ngCordova/ng-cordova.js"></script>
+        <!-- cordova script (this will be a 404 during development) -->
+        <script src="cordova.js"></script>
+        <script src="js/cordovaEvents.js"></script>
+        <script src="js/media.js"></script>
+
+        <!-- your app's js -->
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/top15-controller.js"></script>
+        <script src="js/surpriseme-controller.js"></script>
+        <script src="js/changePassword-controller.js"></script>
+        <script src="js/downloaded-controller.js"></script>
+        <script src="js/playlistMenu-controller.js"></script>
+        <script src="js/playlist-controller.js"></script>
+        <script src="js/bookmarked-controller.js"></script>
+        <script src="js/login-controller.js"></script>
+        <script src="js/register-controller.js"></script>
+        <script src="js/kirtanAlbum-controller.js"></script>
+        <script src="js/kirtan-controller.js"></script>
+        <script src="js/katha-controller.js"></script>
+        <script src="js/song-controller.js"></script>
+        <script src="js/player-controller.js"></script>
+        <script src="js/search-controller.js"></script>
+        <script src="js/search-service.js"></script>
+        <script src="js/services.js"></script>
+
+        <!-- jquery library  js -->
+        <script src="js/jquery-1.11.0.js"></script>
+        <script src="js/jquery-migrate-1.2.1.js"></script>
+
+        <!-- customise js -->
+        <script src="js/customjqueryss.js"></script>
+
+        <script type="text/javascript" charset="utf-8">
+            cordovaEvents.init();
+            // Wait for device API libraries to load
+            //
+            //document.addEventListener("deviceready", onDeviceReady, false);
+
+            // device APIs are available
+            //
+            // function onDeviceReady() {
+            //     playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
+            // }
+
+            // Audio player
+            //
+            var my_media = null;
+            var mediaTimer = null;
+
+            // Play audio
+            //
+            function playAudio(src) {
+                alert(src);
+                // Create Media object from src
+                my_media = new Media(src, onSuccess, onError);
+
+                // Play audio
+                my_media.play();
+                my_media.play({numberOfLoops: 2});
+                my_media.play({playAudioWhenScreenIsLocked: true});
+
+                // Update my_media position every second
+                if (mediaTimer == null) {
+                    mediaTimer = setInterval(function() {
+                        // get my_media position
+                        my_media.getCurrentPosition(
+                                // success callback
+                                        function(position) {
+                                            if (position > -1) {
+                                                //setAudioPosition((position) + " sec");
+                                            }
+                                        },
+                                        // error callback
+                                                function(e) {
+                                                    console.log("Error getting pos=" + e);
+                                                    ///setAudioPosition("Error: " + e);
+                                                }
+                                        );
+                                    }, 1000);
+                        }
+            }
+
+            // Pause audio
+            //
+            function pauseAudio() {
+                if (my_media) {
+                    my_media.pause();
+                }
+            }
+
+            // Stop audio
+            //
+            function stopAudio() {
+                if (my_media) {
+                    my_media.stop();
+                }
+                clearInterval(mediaTimer);
+                mediaTimer = null;
+            }
+
+            // onSuccess Callback
+            //
+            function onSuccess() {
+                console.log("playAudio():Audio Success");
+            }
+
+            // onError Callback
+            //
+            function onError(error) {
+                alert('code: ' + error.code + '\n' +
+                        'message: ' + error.message + '\n');
+            }
+
+            // Set audio position
+            //
+            function setAudioPosition(position) {
+                document.getElementById('audio_position').innerHTML = position;
+            }
+
+        </script>
+    </head>
+    <body ng-app="starter" animation="slide-left-right-ios7">
+
+    <ion-nav-bar class="bar gradient nav-title-slide-ios7">
+        <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back" style="color:#fff;">
+            <img src="images/ldpi.png"></div><b style="position:relative;top:-10px;left:10px;font-size:20px;">Kirtan Bhakti</b>
+        </ion-nav-back-button>
+        <!--ion-header-bar>
+<div class="bar bar-header bar-energized">
+  <h1 class="title">bar-energized</h1>
+</div>
+</ion-header-bar-->
+
+    </ion-nav-bar>
+
+    <ion-nav-view></ion-nav-view>
+    <!--ion-footer-bar align-title="left" class="gradient">
+<div class="buttons">
+<button class="button">Left Button</button>
+</div>
+<h1 class="title">Title!</h1>
+<div class="buttons" ng-click="doSomething()">
+<button class="button">Right Button</button>
+</div>
+</ion-footer-bar-->
+    <!-- Login Popup --> 
+
+
+
+
+    <script id="my-modal.html" type="text/ng-template">
+        <ion-modal-view style="position:absolute;left:0;top:0;">
+        <ion-header-bar>
+        <h1 class="title">My Modal title</h1>
+        </ion-header-bar>
+        <ion-content>
+        Hello!
+        </ion-content>
+        </ion-modal-view>
+    </script>
+
+</body>
+</html>

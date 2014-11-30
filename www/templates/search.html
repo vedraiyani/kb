@@ -1,0 +1,55 @@
+<!--div class="bar bar-header gradient item-input-inset">
+
+    <button ui-sref="main" class="button button-icon icon  ion-ios7-arrow-back" style="background:transparent;border:0px;">
+    </button>
+    <label class="item-input-wrapper" id="search-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="query" >
+    </label>
+</div-->
+
+<ion-view>
+
+    <ion-nav-buttons side="right">
+
+    </ion-nav-buttons>
+
+    <ion-content class="">
+
+        <div id="search-bar">
+            <div class="item item-input-inset">
+              <label class="item-input-wrapper" id="search-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="Search" ng-model="query" >
+              </label>
+            </div>
+         </div>
+
+        <!--ion-refresher on-refresh="doRefresh()"
+                       pulling-text="Pull to refresh..."
+                       refreshing-text="Refreshing!"
+                       refreshing-icon="ion-loading-c">
+        </ion-refresher-->
+
+        <!--div class="bar-subheader">
+        <div class=" button-bar">
+                <button class="button button-light button-android" ng-class="" ng-click="">Songs</button>
+                <button class="button button-light button-android" ng-class="" ng-click="">Alubums</button>
+                <button class="button button-light button-android" ng-class="" ng-click="">Playlists</button>
+      </div>
+    </div-->
+
+        <ion-list class="">
+            <ion-item ng-show="query" ng-repeat="song in songs| filter:{name:query}" 
+                      class="item item-thumbnail-left slide-in-left slide-right-left-ios7" type="item-text-wrap" 
+                      href="#/tab/album/{{album.id}}" >
+                <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg' }}" 
+                     class="">
+                <h2>{{song.name}}</h2>
+                <h4>{{song.genre}}</h4>
+                <h4 ng-if="song.genre=='kirtan'">{{ song.album }}</h4>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

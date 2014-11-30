@@ -1,0 +1,47 @@
+<ion-modal-view id="playerModal">
+    <ion-header-bar id="playerModalHead" class="gradient">
+        <h1 class="title" ng-click="closePlayerModal()">My Modal title</h1>
+        <button class="button button-icon icon ion-ios7-minus-outline" style="color:#fff;" 
+                ng-click="data.showDelete = !data.showDelete;"></button>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list class="" show-delete="data.showDelete">
+            <ion-item ng-show="true" ng-repeat="song in songs" 
+                      class="item item-thumbnail-left " type="item-text-wrap" 
+                      ng-click="play({{song}})" >
+                <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}" 
+                     class="">
+                <h2>{{song.name}}</h2>
+                <h4>{{song.genre}}</h4>
+                <h4 ng-if="song.genre == 'kirtan'">{{ song.album}}</h4>
+                <ion-delete-button class="ion-minus-circled" ng-click="removeFromQueue(song)">
+                </ion-delete-button>
+                <ion-option-button class="" ng-click="openSongPage('/song/{{song.id}}')" style="vertical-align: middle !important;">
+                        <i class="ion-chevron-right assertive" style="font-size:5em;"></i>
+                </ion-option-button>
+            </ion-item>
+            <ion-item ng-show="true"
+                      class="item item-thumbnail-left " type="item-text-wrap" 
+                      href="#"  style="border-bottom:0">
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar>
+
+        <div class="bar bar-subfooter range range-energized " style="border:0;">
+            <i class="">0</i>
+            <input type="range" name="volume" min="0" max="100" value="{{slider.rangeValue}}" ng-model="slider.rangeValue">
+            <i class="">100</i>
+        </div>
+        <div class="bar bar-footer">
+            <div style="border:0; width:100%;">
+                <center>
+                    <a href="#" class="button button-assertive icon ion-ios7-skipbackward" style="border-radius: 50%;"></a>
+                    <a href="#" class="button button-assertive icon ion-ios7-play" style="border-radius: 50%;"></a>
+                    <a href="#" class="button button-assertive icon ion-ios7-skipforward" style="border-radius: 50%;"></a>
+                </center>
+            </div>
+        </div>
+    </ion-footer-bar>
+</ion-modal-view>

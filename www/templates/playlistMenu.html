@@ -1,0 +1,20 @@
+<ion-view>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-ios7-minus-outline" style="color:#fff;" 
+                ng-click="data.showDelete = !data.showDelete;"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list class="" show-delete="data.showDelete">
+            <ion-item ng-show="true" ng-repeat="playlist in playlists" 
+                      class="item item-icon-left assertive" type="item-text-wrap" 
+                      href="#/playlist/{{playlist}}" >
+                <i class="icon ion-music-note"></i>
+                {{playlist}}
+                <ion-delete-button class="ion-minus-circled" 
+                                   ng-click="deletePlaylist(playlist)">
+                </ion-delete-button>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

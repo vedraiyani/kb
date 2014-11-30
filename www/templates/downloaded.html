@@ -1,0 +1,14 @@
+<ion-view>
+    <ion-content>
+        <ion-list class="">
+            <ion-item ng-show="true" ng-repeat="song in songs" 
+                      class="item item-thumbnail-left" type="item-text-wrap" 
+                      href="#/song/{{song.id}}" >
+                <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}" 
+                     class="">
+                <h2>{{song.name}}</h2>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

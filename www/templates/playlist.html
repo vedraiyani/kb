@@ -1,0 +1,24 @@
+<ion-view>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-ios7-minus-outline" style="color:#fff;" 
+                ng-click="data.showDelete = !data.showDelete;"></button>
+        <button ng-click="showActionSheet()" class="button icon ion-android-more" style="background:transparent;border:0px;color:#fff;"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list class="" show-delete="data.showDelete">
+            <ion-item ng-show="true" ng-repeat="song in songs" 
+                      class="item item-thumbnail-left" type="item-text-wrap" 
+                      href="#/song/{{song.songid}}" >
+                <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}" 
+                     class="">
+                <h2>{{song.name}}</h2>
+                <h4>{{song.genre}}</h4>
+                <h4 ng-if="song.genre == 'kirtan'">{{ song.album}}</h4>
+                <ion-delete-button class="ion-minus-circled" 
+                                   ng-click="removeFromPlaylist(song)">
+                </ion-delete-button>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

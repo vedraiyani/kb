@@ -1,0 +1,36 @@
+<ion-modal-view style="position:absolute;left:0;top:0;" id="searchModal">
+    <ion-header-bar class="bar bar-header gradient">
+        <button  ng-click="query='';closeSearchModal()" class="button button-icon icon  ion-ios7-arrow-back" style="background:transparent;border:0px;">
+        </button>
+        <label class="item-input-wrapper" id="search-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Search" ng-model="query">
+        </label>
+    </ion-header-bar>
+    <ion-content>
+        <!--div id="search-bar">
+            <div class="item item-input-inset">
+              <label class="item-input-wrapper" id="search-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="Search" ng-model="query" >
+              </label>
+            </div>
+         </div-->
+        <!--ion-refresher on-refresh="doRefresh()"
+                     pulling-text="Pull to refresh..."
+                     refreshing-text="Refreshing!"
+                     refreshing-icon="ion-loading-c">
+    	</ion-refresher-->
+        <ion-list class="">
+            <ion-item ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" ng-show="query" ng-repeat="song in songs| filter:{name:query}" 
+                      class="item item-thumbnail-left" type="item-text-wrap" 
+                      href="#/song/{{song.id}}" >
+                <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg' }}" 
+                     class="">
+                <h2>{{song.name}}</h2>
+                <h4>{{song.genre}}</h4>
+                <h4 ng-if="song.genre=='kirtan'">{{ song.album }}</h4>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>
