@@ -18,6 +18,9 @@
     </author>
 	<preference name="orientation" value="portrait" />
 	<icon src="icon.png" />
-	<gap:plugin name="com.phonegap.plugins.media"/>
-	<gap:plugin name="com.phonegap.plugins.statusbar"/>
+	<gap:plugin name="org.apache.cordova.media"/>
+	<gap:plugin name="org.apache.cordova.inappbrowser"/>
+	<gap:plugin name="org.apache.cordova.network-information"/>
+	<gap:plugin name="org.apache.cordova.console"/>
+	<gap:plugin name="org.apache.cordova.device"/>
 </widget>
