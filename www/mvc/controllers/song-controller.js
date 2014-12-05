@@ -4,16 +4,14 @@ angular.module('starter.song-controller', []).controller('SongCtrl', [
   '$ionicPopup',
   'SearchSongs',
   function ($scope, $stateParams, $ionicPopup, SearchSongs) {
-    alert($stateParams.id);
+    //$stateParams.id
     $scope.servicerooturl = config.servicerooturl;
     if (!cordovaEvents.isOnline) {
-alert(1);
+
       cordovaEvents.query('SELECT * FROM download where id="' + $stateParams.id + '"', function (rows) {
         if (!rows.length) {
-            alert(2);
           cordovaEvents.query('SELECT * FROM record where id="' + $stateParams.id + '"', function (rows) {
             if (!rows.length) {
-                alert(3);
               var redirectWarn = $ionicPopup.show({
                   template: '<i class="ion-alert-circled" style="color:red;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please check your connection..!',
                   title: '<b>Error</b>',
@@ -28,24 +26,25 @@ alert(1);
                       }
                     }]
                 });
-            } else {alert(4);
+            } else {
               /////
               $scope.songs = rows.item;
               $scope.song = rows.item(0); 
+              $scope.$digest();
             }
           });
-        } else {alert(5);
+        } else {
           //////
           $scope.songs = rows.item;
-          $scope.song = rows.item(0);  
+          $scope.song = rows.item(0); 
+          $scope.$digest();
         }
       });
     } else {
-        alert(6);
       SearchSongs.get('field', '*', '', '["id","=",' + $stateParams.id + ']', function (songs) {
         $scope.songs = songs;
         $scope.song = songs[0];  
-                                 
+                      $scope.$digest();           
       });
     }
     
