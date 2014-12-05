@@ -1,0 +1,18 @@
+<ion-view>
+    <ion-content class="padding">
+        <div  ng-animate="'animate'">
+            <div class="row"  ng-repeat="album in albums">
+                <div class="col " ng-repeat="name in album" >
+                    <a href="#/albumSong/{{name.name}}" style="text-decoration: none;">
+                        <div class="padding tileshadow gradient rounded-corner">
+                            <center>{{name.name}}</center>
+                        </div>
+                    </a>
+                </div>
+                <div class="col " ng-if="album.length == 1"><div class="padding"></div></div>
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

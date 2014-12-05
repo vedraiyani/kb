@@ -1,0 +1,46 @@
+<ion-view>
+    <ion-content class="padding">
+        <form name="registerForm" novalidate>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" name="username" id="username" ng-model="username" placeholder="Username" required/>
+                </label>
+                <label class="item item-input">
+                    <input type="email" name="email" id="email" ng-model="email" placeholder="Email" required/>
+                </label>
+                <label class="item item-input">
+                    <div class="input-label">
+                        Date of Birth:
+                    </div>
+                    <input type="date" name="dob" id="dob" ng-model="dob" placeholder="">
+                </label>
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Gender:
+                    </div>
+                    <select name="gender">
+                        <option selected value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </label>
+                <label class="item item-input">
+                    <input type="password" name="password" id="password" ng-model="password" placeholder="Password" required/>
+                </label>
+                <label class="item item-input">
+                    <input type="password" name="repassword" id="repassword" ng-model="repassword" placeholder="Password Again" required/>
+                </label>
+            </div>
+            <div class="padding">
+                <button class="button button-block gradient" ng-click="submitForm()"
+                        ng-disabled="registerForm.email && registerForm.email.$invalid ||
+                                    registerForm.password && registerForm.password.$invalid ||
+                                    registerForm.repassword && registerForm.repassword.$invalid ||
+                                    registerForm.username && registerForm.username.$invalid ||
+                                    password != repassword">
+                    Register</button>
+            </div>
+        </form>
+
+    </ion-content>
+
+</ion-view>

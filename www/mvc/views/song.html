@@ -1,0 +1,68 @@
+<ion-view>
+    <ion-content class="songCard" ng-repeat="song in songs" style="background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url('{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}') repeat 0 0; background-attachment:fixed;background-size:100% 100%;">
+        <!--div class="row">
+                <div class="col-sm-2">
+                        
+                </div>
+                <div class="col-sm-2">
+                        <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}">
+                </div>	
+                <div class="col-sm-2">
+                        <div class="row">
+                                <div class="col">
+                                        <center-left><h2>{{song.name}}</h2></center-left>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col">
+                                        <h4>{{song.genre}}</h4>
+                                </div>
+                        </div>
+                </div>
+        </div>
+           <a href="#" class="button button-block gradient">Play</a>
+           <a href="#" class="button button-block gradient">Bookmark</a>
+           <a href="#" class="button button-block gradient">Add to Playlist</a>
+           <a href="#" class="button button-block gradient">Add to Queue</a>
+           <a href="#" class="button button-block gradient">Download</a-->
+        <div class="list card">
+            <div class="item item-avatar gradient">
+                <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}" id="songImage">
+                <h2 style="color:#fff;">{{song.title}}</h2>
+                <p style="color:#fff;">
+                    {{song.genre}} 
+                    <i >  [ {{ song.album}} ]</i>
+                    <i >  [ Played {{ song.timesPlayed}} times]</i>
+                </p>
+            </div>
+            <a class="item item-icon-left assertive" ng-click="play()">
+                <i class="icon ion-ios7-play"></i>
+                Play
+            </a>
+            <a class="item item-icon-left assertive" ng-if="!bookmarked" ng-click="bookmark()">
+                <i class="icon ion-pin"></i>
+                Bookmark
+            </a>
+            <a class="item item-icon-left assertive" ng-if="bookmarked" ng-click="unmark()">
+                <i class="icon ion-android-remove"></i>
+                Unmark
+            </a>
+            <a class="item item-icon-left assertive" ng-if="!inPlaylist" ng-click="playlist()">
+                <i class="icon ion-clipboard"></i>
+                Add to Playlist
+            </a>
+            <a class="item item-icon-left assertive" ng-if="inPlaylist" ng-click="removeFromPlaylist()">
+                <i class="icon ion-android-close"></i>
+                Remove from Playlist
+            </a>
+            <a class="item item-icon-left assertive" ng-click="queue()">
+                <i class="icon ion-stats-bars"></i>
+                Add to Queue
+            </a>
+            <a class="item item-icon-left assertive" ng-click="download()">
+                <i class="icon ion-ios7-cloud-download"></i>
+                Download
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

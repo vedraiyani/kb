@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+
+        <!-- ionic/angularjs js -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+        <script src="lib/ngCordova/ng-cordova.js"></script>
+        <!-- cordova script (this will be a 404 during development) -->
+        <script src="cordova.js"></script>
+        <script src="js/cordovaEvents.js"></script>
+        <script src="config.js"></script>
+
+        <!-- jquery library  js -->
+        <script src="js/jquery-1.11.0.js"></script>
+        <script src="js/jquery-migrate-1.2.1.js"></script>
+        
+        <!-- your app's mvc -->
+        <script src="mvc/index.js"></script>
+
+    </head>
+    <body ng-app="starter" ng-controller="SplashCtrl">
+    <ion-view style="background:#000;">
+        <ion-content class="padding" style="background: url(images/loading.jpg);background-size: 100% 100%;background-attachment:fixed;">
+
+        </ion-content>
+    </ion-view>
+</body>
+
+</html>
