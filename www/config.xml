@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.example"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Kirtan Bhakti</name>
+
+    <description>
+        Play kirtan and bhajan in your pocket
+    </description>
+
+    <author href="http://www.qcyclone.com" email="info@qcyclone.com">
+        vedraiyani 
+    </author>
+	<preference name="orientation" value="portrait" />
+	<icon src="icon.png" />
+	<gap:plugin name="org.apache.cordova.file"/>
+	<gap:plugin name="org.apache.cordova.file-transfer"/>
+	<gap:plugin name="org.apache.cordova.inappbrowser"/>
+	<gap:plugin name="org.apache.cordova.media"/>
+	<gap:plugin name="org.apache.cordova.network-information"/>
+	<gap:plugin name="org.apache.cordova.vibration"/>
+	<gap:plugin name="org.apache.cordova.dialogs"/>
+	<gap:plugin name="org.apache.cordova.device"/>
+	
+</widget>
