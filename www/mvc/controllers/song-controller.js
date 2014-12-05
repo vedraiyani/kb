@@ -1,1 +1,404 @@
-var _0xfa6e=["\x53\x6F\x6E\x67\x43\x74\x72\x6C","\x24\x73\x63\x6F\x70\x65","\x24\x73\x74\x61\x74\x65\x50\x61\x72\x61\x6D\x73","\x24\x69\x6F\x6E\x69\x63\x50\x6F\x70\x75\x70","\x53\x65\x61\x72\x63\x68\x53\x6F\x6E\x67\x73","\x73\x65\x72\x76\x69\x63\x65\x72\x6F\x6F\x74\x75\x72\x6C","\x69\x73\x4F\x6E\x6C\x69\x6E\x65","\x53\x45\x4C\x45\x43\x54\x20\x2A\x20\x46\x52\x4F\x4D\x20\x64\x6F\x77\x6E\x6C\x6F\x61\x64\x20\x77\x68\x65\x72\x65\x20\x69\x64\x3D\x22","\x69\x64","\x22","\x6C\x65\x6E\x67\x74\x68","\x53\x45\x4C\x45\x43\x54\x20\x2A\x20\x46\x52\x4F\x4D\x20\x72\x65\x63\x6F\x72\x64\x20\x77\x68\x65\x72\x65\x20\x69\x64\x3D\x22","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6F\x6E\x2D\x61\x6C\x65\x72\x74\x2D\x63\x69\x72\x63\x6C\x65\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x63\x6F\x6C\x6F\x72\x3A\x72\x65\x64\x3B\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x33\x65\x6D\x3B\x22\x3E\x3C\x2F\x69\x3E\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x50\x6C\x65\x61\x73\x65\x20\x63\x68\x65\x63\x6B\x20\x79\x6F\x75\x72\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x2E\x2E\x21","\x3C\x62\x3E\x45\x72\x72\x6F\x72\x3C\x2F\x62\x3E","\x3C\x62\x3E\x4F\x4B\x3C\x2F\x62\x3E","\x62\x75\x74\x74\x6F\x6E\x2D\x61\x73\x73\x65\x72\x74\x69\x76\x65","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x63\x6C\x6F\x73\x65","\x68\x72\x65\x66","\x73\x74\x61\x72\x74\x2E\x68\x74\x6D\x6C","\x73\x68\x6F\x77","\x73\x6F\x6E\x67\x73","\x69\x74\x65\x6D","\x73\x6F\x6E\x67","\x71\x75\x65\x72\x79","\x66\x69\x65\x6C\x64","\x2A","","\x5B\x22\x69\x64\x22\x2C\x22\x3D\x22\x2C","\x5D","\x67\x65\x74","\x53\x45\x4C\x45\x43\x54\x20\x2A\x20\x46\x52\x4F\x4D\x20\x62\x6F\x6F\x6B\x6D\x61\x72\x6B\x20\x77\x68\x65\x72\x65\x20\x69\x64\x3D\x22","\x62\x6F\x6F\x6B\x6D\x61\x72\x6B\x65\x64","\x53\x45\x4C\x45\x43\x54\x20\x2A\x20\x46\x52\x4F\x4D\x20\x70\x6C\x61\x79\x6C\x69\x73\x74\x20\x77\x68\x65\x72\x65\x20\x73\x6F\x6E\x67\x69\x64\x3D\x22","\x69\x6E\x50\x6C\x61\x79\x6C\x69\x73\x74","\x70\x6C\x61\x79","\x53\x45\x4C\x45\x43\x54\x20\x2A\x20\x46\x52\x4F\x4D\x20\x71\x75\x65\x75\x65\x20\x77\x68\x65\x72\x65\x20\x69\x64\x3D\x22","\x71\x75\x65\x75\x65","\x69\x6E\x73\x65\x72\x74\x20\x69\x6E\x74\x6F\x20\x71\x75\x65\x75\x65\x28\x69\x64\x2C\x6E\x61\x6D\x65\x2C\x66\x69\x6C\x65\x2C\x74\x69\x74\x6C\x65\x2C\x61\x6C\x62\x75\x6D\x2C\x79\x65\x61\x72\x2C\x67\x65\x6E\x72\x65\x2C\x64\x61\x74\x65\x2C\x63\x6F\x76\x65\x72\x2C\x64\x75\x72\x61\x74\x69\x6F\x6E\x2C\x70\x72\x69\x6F\x72\x69\x74\x79\x29\x76\x61\x6C\x75\x65\x73\x28","\x2C\x22","\x6E\x61\x6D\x65","\x22\x2C\x22","\x66\x69\x6C\x65","\x74\x69\x74\x6C\x65","\x61\x6C\x62\x75\x6D","\x22\x2C","\x79\x65\x61\x72","\x67\x65\x6E\x72\x65","\x64\x61\x74\x65","\x63\x6F\x76\x65\x72","\x64\x75\x72\x61\x74\x69\x6F\x6E","\x2C","\x29","\x6E\x75\x6C\x6C\x48\x61\x6E\x64\x6C\x65\x72","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6F\x6E\x2D\x63\x68\x65\x63\x6B\x6D\x61\x72\x6B\x2D\x63\x69\x72\x63\x6C\x65\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x63\x6F\x6C\x6F\x72\x3A\x79\x65\x6C\x6C\x6F\x77\x3B\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x33\x65\x6D\x3B\x22\x3E\x3C\x2F\x69\x3E\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x41\x64\x64\x65\x64\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x2E\x2E\x21","\x3C\x62\x3E\x53\x75\x63\x63\x65\x73\x73\x3C\x2F\x62\x3E","\x62\x75\x74\x74\x6F\x6E\x2D\x65\x6E\x65\x72\x67\x69\x7A\x65\x64","\x70\x75\x73\x68","\x70\x61\x74\x68","\x75\x70\x6C\x6F\x61\x64\x73\x2F","\x2E\x6D\x70\x33","\x70\x6C\x61\x79\x41\x75\x64\x69\x6F","\x62\x6F\x6F\x6B\x6D\x61\x72\x6B","\x69\x73\x4C\x6F\x67\x67\x65\x64\x49\x6E","\x69\x6E\x73\x65\x72\x74\x20\x69\x6E\x74\x6F\x20\x62\x6F\x6F\x6B\x6D\x61\x72\x6B\x28\x69\x64\x2C\x6E\x61\x6D\x65\x2C\x66\x69\x6C\x65\x2C\x74\x69\x74\x6C\x65\x2C\x61\x6C\x62\x75\x6D\x2C\x79\x65\x61\x72\x2C\x67\x65\x6E\x72\x65\x2C\x64\x61\x74\x65\x2C\x63\x6F\x76\x65\x72\x2C\x64\x75\x72\x61\x74\x69\x6F\x6E\x29\x76\x61\x6C\x75\x65\x73\x28","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6F\x6E\x2D\x61\x6C\x65\x72\x74\x2D\x63\x69\x72\x63\x6C\x65\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x63\x6F\x6C\x6F\x72\x3A\x72\x65\x64\x3B\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x33\x65\x6D\x3B\x22\x3E\x3C\x2F\x69\x3E\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x50\x6C\x65\x61\x73\x65\x20\x4C\x6F\x67\x69\x6E\x2E\x2E\x21","\x75\x6E\x6D\x61\x72\x6B","\x64\x65\x6C\x65\x74\x65\x20\x46\x52\x4F\x4D\x20\x62\x6F\x6F\x6B\x6D\x61\x72\x6B\x20\x77\x68\x65\x72\x65\x20\x69\x64\x3D\x22","\x70\x6C\x61\x79\x6C\x69\x73\x74","\x3C\x70\x3E\x57\x61\x6E\x74\x20\x74\x6F\x20\x63\x72\x65\x61\x74\x65\x20\x6E\x65\x77\x20\x50\x6C\x61\x79\x6C\x69\x73\x74\x20\x3F\x3C\x2F\x70\x3E","\x50\x6C\x65\x61\x73\x65\x20\x61\x6E\x73\x77\x65\x72","\x3C\x62\x3E\x59\x65\x73\x3C\x2F\x62\x3E","\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x22\x20\x69\x64\x3D\x22\x6E\x65\x77\x50\x6C\x61\x79\x6C\x69\x73\x74\x22\x20\x6E\x67\x2D\x6D\x6F\x64\x65\x6C\x3D\x22\x6E\x65\x77\x50\x6C\x61\x79\x6C\x69\x73\x74\x22\x20\x70\x6C\x61\x63\x65\x68\x6F\x6C\x64\x65\x72\x3D\x22\x50\x6C\x61\x79\x6C\x69\x73\x74\x2E\x2E\x2E\x22\x3E","\x3C\x62\x3E\x45\x6E\x74\x65\x72\x20\x70\x6C\x61\x79\x6C\x69\x73\x74\x20\x6E\x61\x6D\x65\x3A\x3C\x2F\x62\x3E","\x3C\x62\x3E\x41\x64\x64\x3C\x2F\x62\x3E","\x76\x61\x6C","\x23\x6E\x65\x77\x50\x6C\x61\x79\x6C\x69\x73\x74","\x22\x20\x61\x6E\x64\x20\x70\x6C\x61\x79\x6C\x69\x73\x74\x6E\x61\x6D\x65\x3D\x22","\x69\x6E\x73\x65\x72\x74\x20\x69\x6E\x74\x6F\x20\x70\x6C\x61\x79\x6C\x69\x73\x74\x28\x70\x6C\x61\x79\x6C\x69\x73\x74\x6E\x61\x6D\x65\x2C\x73\x6F\x6E\x67\x69\x64\x2C\x6E\x61\x6D\x65\x2C\x66\x69\x6C\x65\x2C\x74\x69\x74\x6C\x65\x2C\x61\x6C\x62\x75\x6D\x2C\x79\x65\x61\x72\x2C\x67\x65\x6E\x72\x65\x2C\x64\x61\x74\x65\x2C\x63\x6F\x76\x65\x72\x2C\x64\x75\x72\x61\x74\x69\x6F\x6E\x29\x76\x61\x6C\x75\x65\x73\x28\x22","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6F\x6E\x2D\x63\x68\x65\x63\x6B\x6D\x61\x72\x6B\x2D\x63\x69\x72\x63\x6C\x65\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x63\x6F\x6C\x6F\x72\x3A\x79\x65\x6C\x6C\x6F\x77\x3B\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x33\x65\x6D\x3B\x22\x3E\x3C\x2F\x69\x3E\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x41\x64\x64\x65\x64\x20\x74\x6F\x20\x50\x6C\x61\x79\x6C\x69\x73\x74\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x2E\x2E\x21","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6F\x6E\x2D\x61\x6C\x65\x72\x74\x2D\x63\x69\x72\x63\x6C\x65\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x63\x6F\x6C\x6F\x72\x3A\x67\x72\x65\x65\x6E\x3B\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x33\x65\x6D\x3B\x22\x3E\x3C\x2F\x69\x3E\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x41\x6C\x72\x65\x61\x64\x79\x20\x69\x6E\x20\x70\x6C\x61\x79\x6C\x69\x73\x74\x2E\x2E\x21","\x3C\x62\x3E\x57\x61\x72\x6E\x69\x6E\x67\x3C\x2F\x62\x3E","\x62\x75\x74\x74\x6F\x6E\x2D\x62\x61\x6C\x61\x6E\x63\x65\x64","\x3C\x62\x3E\x63\x61\x6E\x63\x65\x6C\x3C\x2F\x62\x3E","\x3C\x62\x3E\x4E\x6F\x3C\x2F\x62\x3E","\x53\x45\x4C\x45\x43\x54\x20\x64\x69\x73\x74\x69\x6E\x63\x74\x20\x70\x6C\x61\x79\x6C\x69\x73\x74\x6E\x61\x6D\x65\x20\x46\x52\x4F\x4D\x20\x70\x6C\x61\x79\x6C\x69\x73\x74\x3B","\x3C\x6C\x61\x62\x65\x6C\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x74\x65\x6D\x20\x69\x74\x65\x6D\x2D\x69\x6E\x70\x75\x74\x20\x69\x74\x65\x6D\x2D\x73\x65\x6C\x65\x63\x74\x22\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x70\x75\x74\x2D\x6C\x61\x62\x65\x6C\x22\x3E\x50\x6C\x61\x79\x6C\x69\x73\x74\x73\x3C\x2F\x64\x69\x76\x3E","\x3C\x73\x65\x6C\x65\x63\x74\x20\x69\x64\x3D\x22\x70\x6C\x61\x79\x6C\x69\x73\x74\x73\x22\x20\x6E\x61\x6D\x65\x3D\x22\x70\x6C\x61\x79\x6C\x69\x73\x74\x73\x22\x3E","\x70\x6C\x61\x79\x6C\x69\x73\x74\x6E\x61\x6D\x65","\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x20\x76\x61\x6C\x75\x65\x3D\x22","\x22\x3E","\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E","\x3C\x2F\x73\x65\x6C\x65\x63\x74\x3E\x3C\x2F\x6C\x61\x62\x65\x6C\x3E","\x3C\x62\x3E\x53\x65\x6C\x65\x63\x74\x20\x70\x6C\x61\x79\x6C\x69\x73\x74\x3A\x3C\x2F\x62\x3E","\x23\x70\x6C\x61\x79\x6C\x69\x73\x74\x73","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6F\x6E\x2D\x61\x6C\x65\x72\x74\x2D\x63\x69\x72\x63\x6C\x65\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x63\x6F\x6C\x6F\x72\x3A\x67\x72\x65\x65\x6E\x3B\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x33\x65\x6D\x3B\x22\x3E\x3C\x2F\x69\x3E\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x50\x6C\x61\x79\x6C\x69\x73\x74\x20\x6E\x6F\x74\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x2E\x2E\x21","\x72\x65\x6D\x6F\x76\x65\x46\x72\x6F\x6D\x50\x6C\x61\x79\x6C\x69\x73\x74","\x64\x65\x6C\x65\x74\x65\x20\x46\x52\x4F\x4D\x20\x70\x6C\x61\x79\x6C\x69\x73\x74\x20\x77\x68\x65\x72\x65\x20\x73\x6F\x6E\x67\x69\x64\x3D\x22","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6F\x6E\x2D\x63\x68\x65\x63\x6B\x6D\x61\x72\x6B\x2D\x63\x69\x72\x63\x6C\x65\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x63\x6F\x6C\x6F\x72\x3A\x79\x65\x6C\x6C\x6F\x77\x3B\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x33\x65\x6D\x3B\x22\x3E\x3C\x2F\x69\x3E\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x52\x65\x6D\x6F\x76\x65\x64\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x2E\x2E\x21","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6F\x6E\x2D\x61\x6C\x65\x72\x74\x2D\x63\x69\x72\x63\x6C\x65\x64\x22\x20\x73\x74\x79\x6C\x65\x3D\x22\x63\x6F\x6C\x6F\x72\x3A\x67\x72\x65\x65\x6E\x3B\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x33\x65\x6D\x3B\x22\x3E\x3C\x2F\x69\x3E\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x26\x6E\x62\x73\x70\x3B\x41\x6C\x72\x65\x61\x64\x79\x20\x69\x6E\x20\x71\x75\x65\x75\x65\x2E\x2E\x21","\x64\x6F\x77\x6E\x6C\x6F\x61\x64","\x63\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72","\x73\x74\x61\x72\x74\x65\x72\x2E\x73\x6F\x6E\x67\x2D\x63\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72","\x6D\x6F\x64\x75\x6C\x65"];angular[_0xfa6e[103]](_0xfa6e[102],[])[_0xfa6e[101]](_0xfa6e[0],[_0xfa6e[1],_0xfa6e[2],_0xfa6e[3],_0xfa6e[4],function (_0x6709x1,_0x6709x2,_0x6709x3,_0x6709x4){_0x6709x1[_0xfa6e[5]]=config[_0xfa6e[5]];if(!cordovaEvents[_0xfa6e[6]]){cordovaEvents[_0xfa6e[24]](_0xfa6e[7]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],function (_0x6709x5){if(!_0x6709x5[_0xfa6e[10]]){cordovaEvents[_0xfa6e[24]](_0xfa6e[11]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],function (_0x6709x5){if(!_0x6709x5[_0xfa6e[10]]){var _0x6709x6=_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[12],title:_0xfa6e[13],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[15],onTap:function (_0x6709x7){_0x6709x7[_0xfa6e[16]]();_0x6709x6[_0xfa6e[17]]();location[_0xfa6e[18]]=_0xfa6e[19];} }]});} else {_0x6709x1[_0xfa6e[21]]=_0x6709x5[_0xfa6e[22]];_0x6709x1[_0xfa6e[23]]=_0x6709x5[_0xfa6e[22]](0);} ;} );} else {_0x6709x1[_0xfa6e[21]]=_0x6709x5[_0xfa6e[22]];_0x6709x1[_0xfa6e[23]]=_0x6709x5[_0xfa6e[22]](0);} ;} );} else {_0x6709x4[_0xfa6e[30]](_0xfa6e[25],_0xfa6e[26],_0xfa6e[27],_0xfa6e[28]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[29],function (_0x6709x8){_0x6709x1[_0xfa6e[21]]=_0x6709x8;_0x6709x1[_0xfa6e[23]]=_0x6709x8[0];} );} ;cordovaEvents[_0xfa6e[24]](_0xfa6e[31]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],function (_0x6709x5){if(!_0x6709x5[_0xfa6e[10]]){_0x6709x1[_0xfa6e[32]]=false;_0x6709x1.$digest();} else {_0x6709x1[_0xfa6e[32]]=true;_0x6709x1.$digest();} ;} );cordovaEvents[_0xfa6e[24]](_0xfa6e[33]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],function (_0x6709x5){if(!_0x6709x5[_0xfa6e[10]]){_0x6709x1[_0xfa6e[34]]=false;_0x6709x1.$digest();} else {_0x6709x1[_0xfa6e[34]]=true;_0x6709x1.$digest();} ;} );_0x6709x1[_0xfa6e[35]]=function (){cordovaEvents[_0xfa6e[24]](_0xfa6e[36]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],function (_0x6709x5){if(!_0x6709x5[_0xfa6e[10]]){medialength=media[_0xfa6e[37]][_0xfa6e[10]];cordovaEvents[_0xfa6e[24]](_0xfa6e[38]+_0x6709x1[_0xfa6e[23]][_0xfa6e[8]]+_0xfa6e[39]+_0x6709x1[_0xfa6e[23]][_0xfa6e[40]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[42]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[43]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[44]]+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[46]]+_0xfa6e[39]+_0x6709x1[_0xfa6e[23]][_0xfa6e[47]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[48]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[49]]+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[50]]+_0xfa6e[51]+medialength+_0xfa6e[52],cordovaEvents[_0xfa6e[53]]);_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[54],title:_0xfa6e[55],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[56],onTap:function (_0x6709x7){} }]});media[_0xfa6e[37]][_0xfa6e[57]](_0x6709x1[_0xfa6e[23]]);_0x6709x1[_0xfa6e[23]][_0xfa6e[58]]=config[_0xfa6e[5]]+_0xfa6e[59]+_0x6709x1[_0xfa6e[23]][_0xfa6e[42]]+_0xfa6e[60];media[_0xfa6e[61]](_0x6709x1[_0xfa6e[23]]);} else {_0x6709x1[_0xfa6e[23]][_0xfa6e[58]]=config[_0xfa6e[5]]+_0xfa6e[59]+_0x6709x1[_0xfa6e[23]][_0xfa6e[42]]+_0xfa6e[60];media[_0xfa6e[61]](_0x6709x1[_0xfa6e[23]]);} ;} );} ;_0x6709x1[_0xfa6e[62]]=function (){if(cordovaEvents[_0xfa6e[63]]){cordovaEvents[_0xfa6e[24]](_0xfa6e[31]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],function (_0x6709x5){if(!_0x6709x5[_0xfa6e[10]]){cordovaEvents[_0xfa6e[24]](_0xfa6e[64]+_0x6709x1[_0xfa6e[23]][_0xfa6e[8]]+_0xfa6e[39]+_0x6709x1[_0xfa6e[23]][_0xfa6e[40]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[42]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[43]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[44]]+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[46]]+_0xfa6e[39]+_0x6709x1[_0xfa6e[23]][_0xfa6e[47]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[48]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[49]]+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[50]]+_0xfa6e[52],cordovaEvents[_0xfa6e[53]]);_0x6709x1[_0xfa6e[32]]=true;_0x6709x1.$digest();} ;} );} else {_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[65],title:_0xfa6e[13],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[15],onTap:function (_0x6709x7){} }]});} ;} ;_0x6709x1[_0xfa6e[66]]=function (){if(cordovaEvents[_0xfa6e[63]]){cordovaEvents[_0xfa6e[24]](_0xfa6e[31]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],function (_0x6709x5){if(_0x6709x5[_0xfa6e[10]]){cordovaEvents[_0xfa6e[24]](_0xfa6e[67]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],cordovaEvents[_0xfa6e[53]]);_0x6709x1[_0xfa6e[32]]=false;_0x6709x1.$digest();} ;} );} else {_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[65],title:_0xfa6e[13],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[15],onTap:function (_0x6709x7){} }]});} ;} ;_0x6709x1[_0xfa6e[68]]=function (){if(cordovaEvents[_0xfa6e[63]]){var _0x6709x9=_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[69],title:_0xfa6e[70],scope:_0x6709x1,buttons:[{text:_0xfa6e[71],type:_0xfa6e[56],onTap:function (_0x6709x7){_0x6709x7[_0xfa6e[16]]();_0x6709x9[_0xfa6e[17]]();var _0x6709xa=_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[72],title:_0xfa6e[73],scope:_0x6709x1,buttons:[{text:_0xfa6e[74],type:_0xfa6e[56],onTap:function (_0x6709x7){_0x6709x7[_0xfa6e[16]]();_0x6709xa[_0xfa6e[17]]();newPlaylist=$(_0xfa6e[76])[_0xfa6e[75]]();cordovaEvents[_0xfa6e[24]](_0xfa6e[33]+_0x6709x1[_0xfa6e[23]][_0xfa6e[8]]+_0xfa6e[77]+newPlaylist+_0xfa6e[9],function (_0x6709x5){if(!_0x6709x5[_0xfa6e[10]]){cordovaEvents[_0xfa6e[24]](_0xfa6e[78]+newPlaylist+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[8]]+_0xfa6e[39]+_0x6709x1[_0xfa6e[23]][_0xfa6e[40]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[42]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[43]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[44]]+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[46]]+_0xfa6e[39]+_0x6709x1[_0xfa6e[23]][_0xfa6e[47]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[48]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[49]]+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[50]]+_0xfa6e[52],cordovaEvents[_0xfa6e[53]]);_0x6709x1[_0xfa6e[34]]=true;_0x6709x1.$digest();_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[79],title:_0xfa6e[55],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[56],onTap:function (_0x6709x7){} }]});} else {_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[80],title:_0xfa6e[81],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[82],onTap:function (_0x6709x7){} }]});} ;} );} },{text:_0xfa6e[83],onTap:function (_0x6709x7){} }]});} },{text:_0xfa6e[84],onTap:function (_0x6709x7){_0x6709x7[_0xfa6e[16]]();_0x6709x9[_0xfa6e[17]]();cordovaEvents[_0xfa6e[24]](_0xfa6e[85],function (_0x6709x5){var _0x6709xb=_0xfa6e[27];_0x6709xb+=_0xfa6e[86];_0x6709xb+=_0xfa6e[87];if(_0x6709x5[_0xfa6e[10]]){for(var _0x6709xc=0;_0x6709xc<_0x6709x5[_0xfa6e[10]];_0x6709xc++){var _0x6709xd=_0x6709x5[_0xfa6e[22]](_0x6709xc)[_0xfa6e[88]];_0x6709xb+=_0xfa6e[89]+_0x6709xd+_0xfa6e[90]+_0x6709xd+_0xfa6e[91];} ;} ;_0x6709xb+=_0xfa6e[92];var _0x6709xe=_0x6709x3[_0xfa6e[20]]({template:_0x6709xb,title:_0xfa6e[93],scope:_0x6709x1,buttons:[{text:_0xfa6e[74],type:_0xfa6e[56],onTap:function (_0x6709x7){_0x6709x7[_0xfa6e[16]]();_0x6709xe[_0xfa6e[17]]();_0x6709xb=$(_0xfa6e[94])[_0xfa6e[75]]();if(_0x6709xb){cordovaEvents[_0xfa6e[24]](_0xfa6e[33]+_0x6709x1[_0xfa6e[23]][_0xfa6e[8]]+_0xfa6e[77]+_0x6709xb+_0xfa6e[9],function (_0x6709x5){if(!_0x6709x5[_0xfa6e[10]]){cordovaEvents[_0xfa6e[24]](_0xfa6e[78]+_0x6709xb+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[8]]+_0xfa6e[39]+_0x6709x1[_0xfa6e[23]][_0xfa6e[40]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[42]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[43]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[44]]+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[46]]+_0xfa6e[39]+_0x6709x1[_0xfa6e[23]][_0xfa6e[47]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[48]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[49]]+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[50]]+_0xfa6e[52],cordovaEvents[_0xfa6e[53]]);_0x6709x1[_0xfa6e[34]]=true;_0x6709x1.$digest();_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[79],title:_0xfa6e[55],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[56],onTap:function (_0x6709x7){} }]});} else {_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[80],title:_0xfa6e[81],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[82],onTap:function (_0x6709x7){} }]});} ;} );} else {_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[95],title:_0xfa6e[81],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[82],onTap:function (_0x6709x7){} }]});} ;} },{text:_0xfa6e[83],onTap:function (_0x6709x7){} }]});} );} },{text:_0xfa6e[83],onTap:function (_0x6709x7){} }]});} else {_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[65],title:_0xfa6e[13],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[15],onTap:function (_0x6709x7){} }]});} ;} ;_0x6709x1[_0xfa6e[96]]=function (){cordovaEvents[_0xfa6e[24]](_0xfa6e[33]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],function (_0x6709x5){if(_0x6709x5[_0xfa6e[10]]){cordovaEvents[_0xfa6e[24]](_0xfa6e[97]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],cordovaEvents[_0xfa6e[53]]);_0x6709x1[_0xfa6e[34]]=false;_0x6709x1.$digest();_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[98],title:_0xfa6e[55],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[56],onTap:function (_0x6709x7){} }]});} ;} );} ;_0x6709x1[_0xfa6e[37]]=function (){cordovaEvents[_0xfa6e[24]](_0xfa6e[36]+_0x6709x2[_0xfa6e[8]]+_0xfa6e[9],function (_0x6709x5){if(!_0x6709x5[_0xfa6e[10]]){medialength=media[_0xfa6e[37]][_0xfa6e[10]];cordovaEvents[_0xfa6e[24]](_0xfa6e[38]+_0x6709x1[_0xfa6e[23]][_0xfa6e[8]]+_0xfa6e[39]+_0x6709x1[_0xfa6e[23]][_0xfa6e[40]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[42]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[43]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[44]]+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[46]]+_0xfa6e[39]+_0x6709x1[_0xfa6e[23]][_0xfa6e[47]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[48]]+_0xfa6e[41]+_0x6709x1[_0xfa6e[23]][_0xfa6e[49]]+_0xfa6e[45]+_0x6709x1[_0xfa6e[23]][_0xfa6e[50]]+_0xfa6e[51]+medialength+_0xfa6e[52],cordovaEvents[_0xfa6e[53]]);_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[54],title:_0xfa6e[55],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[56],onTap:function (_0x6709x7){} }]});media[_0xfa6e[37]][_0xfa6e[57]](_0x6709x1[_0xfa6e[23]]);} else {var _0x6709x6=_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[99],title:_0xfa6e[81],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[82],onTap:function (_0x6709x7){} }]});} ;} );} ;_0x6709x1[_0xfa6e[100]]=function (){if(cordovaEvents[_0xfa6e[63]]){if(cordovaEvents[_0xfa6e[6]]){} else {_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[12],title:_0xfa6e[13],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[15],onTap:function (_0x6709x7){} }]});} ;} else {_0x6709x3[_0xfa6e[20]]({template:_0xfa6e[65],title:_0xfa6e[13],scope:_0x6709x1,buttons:[{text:_0xfa6e[14],type:_0xfa6e[15],onTap:function (_0x6709x7){} }]});} ;} ;} ]);
+angular.module('starter.song-controller', []).controller('SongCtrl', [
+  '$scope',
+  '$stateParams',
+  '$ionicPopup',
+  'SearchSongs',
+  function ($scope, $stateParams, $ionicPopup, SearchSongs) {
+    //$stateParams.id
+    $scope.servicerooturl = config.servicerooturl;
+    if (!cordovaEvents.isOnline) {
+
+      cordovaEvents.query('SELECT * FROM download where id="' + $stateParams.id + '"', function (rows) {
+        if (!rows.length) {
+          cordovaEvents.query('SELECT * FROM record where id="' + $stateParams.id + '"', function (rows) {
+            if (!rows.length) {
+              var redirectWarn = $ionicPopup.show({
+                  template: '<i class="ion-alert-circled" style="color:red;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please check your connection..!',
+                  title: '<b>Error</b>',
+                  scope: $scope,
+                  buttons: [{
+                      text: '<b>OK</b>',
+                      type: 'button-assertive',
+                      onTap: function (e) {
+                        e.preventDefault();
+                        redirectWarn.close();
+                        location.href = 'start.html';
+                      }
+                    }]
+                });
+            } else {
+              /////
+              $scope.songs = rows.item;
+              $scope.song = rows.item(0); 
+            }
+          });
+        } else {
+          //////
+          $scope.songs = rows.item;
+          $scope.song = rows.item(0);  
+        }
+      });
+    } else {
+      SearchSongs.get('field', '*', '', '["id","=",' + $stateParams.id + ']', function (songs) {
+        $scope.songs = songs;
+        $scope.song = songs[0];  
+                                 
+      });
+    }
+    
+    ///check already bookmarked
+    cordovaEvents.query('SELECT * FROM bookmark where id="' + $stateParams.id + '"', function (rows) {
+      if (!rows.length) {
+        $scope.bookmarked = false;
+        $scope.$digest();
+      } else {
+        $scope.bookmarked = true;
+        $scope.$digest();
+      }
+    });
+    ///check already in playlist
+    cordovaEvents.query('SELECT * FROM playlist where songid="' + $stateParams.id + '"', function (rows) {
+      if (!rows.length) {
+        $scope.inPlaylist = false;
+        $scope.$digest();
+      } else {
+        $scope.inPlaylist = true;
+        $scope.$digest();
+      }
+    });
+    ///////play
+    $scope.play = function () {
+      cordovaEvents.query('SELECT * FROM queue where id="' + $stateParams.id + '"', function (rows) {
+        if (!rows.length) {
+          medialength = media.queue.length;
+          cordovaEvents.query('insert into queue(id,name,file,title,album,year,genre,date,cover,duration,priority)values(' + $scope.song.id + ',"' + $scope.song.name + '","' + $scope.song.file + '","' + $scope.song.title + '","' + $scope.song.album + '",' + $scope.song.year + ',"' + $scope.song.genre + '","' + $scope.song.date + '","' + $scope.song.cover + '",' + $scope.song.duration + ',' + medialength + ')', cordovaEvents.nullHandler);
+          $ionicPopup.show({
+            template: '<i class="ion-checkmark-circled" style="color:yellow;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Added successfully..!',
+            title: '<b>Success</b>',
+            scope: $scope,
+            buttons: [{
+                text: '<b>OK</b>',
+                type: 'button-energized',
+                onTap: function (e) {
+                }
+              }]
+          });
+          media.queue.push($scope.song);
+          $scope.song.path = config.servicerooturl + 'uploads/' + $scope.song.file + '.mp3';
+          media.playAudio($scope.song);
+        } else {
+          $scope.song.path = config.servicerooturl + 'uploads/' + $scope.song.file + '.mp3';
+          media.playAudio($scope.song);
+        }
+      });
+    };
+    ///////bookmark
+    $scope.bookmark = function () {
+      if (cordovaEvents.isLoggedIn) {
+        cordovaEvents.query('SELECT * FROM bookmark where id="' + $stateParams.id + '"', function (rows) {
+          if (!rows.length) {
+            cordovaEvents.query('insert into bookmark(id,name,file,title,album,year,genre,date,cover,duration)values(' + $scope.song.id + ',"' + $scope.song.name + '","' + $scope.song.file + '","' + $scope.song.title + '","' + $scope.song.album + '",' + $scope.song.year + ',"' + $scope.song.genre + '","' + $scope.song.date + '","' + $scope.song.cover + '",' + $scope.song.duration + ')', cordovaEvents.nullHandler);
+            
+			$scope.bookmarked = true;
+            $scope.$digest();
+          } 
+        });
+      } else {
+        $ionicPopup.show({
+          template: '<i class="ion-alert-circled" style="color:red;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please Login..!',
+          title: '<b>Error</b>',
+          scope: $scope,
+          buttons: [{
+              text: '<b>OK</b>',
+              type: 'button-assertive',
+              onTap: function (e) {
+              }
+            }]
+        });
+      }
+    };
+    ///////unmark
+    $scope.unmark = function () {
+      if (cordovaEvents.isLoggedIn) {
+        cordovaEvents.query('SELECT * FROM bookmark where id="' + $stateParams.id + '"', function (rows) {
+          if (rows.length) {
+            cordovaEvents.query('delete FROM bookmark where id="' + $stateParams.id + '"', cordovaEvents.nullHandler);
+            $scope.bookmarked = false;
+            $scope.$digest();
+          }
+        });
+      } else {
+        $ionicPopup.show({
+          template: '<i class="ion-alert-circled" style="color:red;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please Login..!',
+          title: '<b>Error</b>',
+          scope: $scope,
+          buttons: [{
+              text: '<b>OK</b>',
+              type: 'button-assertive',
+              onTap: function (e) {
+              }
+            }]
+        });
+      }
+    };
+    //////playlist
+    $scope.playlist = function () {
+      if (cordovaEvents.isLoggedIn) {
+        var askPlaylist = $ionicPopup.show({
+            template: '<p>Want to create new Playlist ?</p>',
+            title: 'Please answer',
+            scope: $scope,
+            buttons: [
+              {
+                text: '<b>Yes</b>',
+                type: 'button-energized',
+                onTap: function (e) {
+                  e.preventDefault();
+                  askPlaylist.close();
+                  var createPlaylist = $ionicPopup.show({
+                      template: '<input type="text" id="newPlaylist" ng-model="newPlaylist" placeholder="Playlist...">',
+                      title: '<b>Enter playlist name:</b>',
+                      scope: $scope,
+                      buttons: [
+                        {
+                          text: '<b>Add</b>',
+                          type: 'button-energized',
+                          onTap: function (e) {
+                            e.preventDefault();
+                            createPlaylist.close();
+                            newPlaylist = $('#newPlaylist').val();
+                            ////add new playlist
+                            cordovaEvents.query('SELECT * FROM playlist where songid="' + $scope.song.id + '" and playlistname="' + newPlaylist + '"', function (rows) {
+                              if (!rows.length) {
+                                cordovaEvents.query('insert into playlist(playlistname,songid,name,file,title,album,year,genre,date,cover,duration)values("' + newPlaylist + '",' + $scope.song.id + ',"' + $scope.song.name + '","' + $scope.song.file + '","' + $scope.song.title + '","' + $scope.song.album + '",' + $scope.song.year + ',"' + $scope.song.genre + '","' + $scope.song.date + '","' + $scope.song.cover + '",' + $scope.song.duration + ')', cordovaEvents.nullHandler);
+                                $scope.inPlaylist = true;
+                                $scope.$digest();
+                                $ionicPopup.show({
+                                  template: '<i class="ion-checkmark-circled" style="color:yellow;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Added to Playlist successfully..!',
+                                  title: '<b>Success</b>',
+                                  scope: $scope,
+                                  buttons: [{
+                                      text: '<b>OK</b>',
+                                      type: 'button-energized',
+                                      onTap: function (e) {
+                                      }
+                                    }]
+                                });
+                              } else {
+                                $ionicPopup.show({
+                                  template: '<i class="ion-alert-circled" style="color:green;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Already in playlist..!',
+                                  title: '<b>Warning</b>',
+                                  scope: $scope,
+                                  buttons: [{
+                                      text: '<b>OK</b>',
+                                      type: 'button-balanced',
+                                      onTap: function (e) {
+                                      }
+                                    }]
+                                });
+                              }
+                            });
+                          }
+                        },
+                        {
+                          text: '<b>cancel</b>',
+                          onTap: function (e) {
+                          }
+                        }
+                      ]
+                    });
+                }
+              },
+              {
+                text: '<b>No</b>',
+                onTap: function (e) {
+                  e.preventDefault();
+                  askPlaylist.close();
+                  cordovaEvents.query('SELECT distinct playlistname FROM playlist;', function (rows) {
+                    var playlists = '';
+                    playlists += '<label class="item item-input item-select"><div class="input-label">Playlists</div>';
+                    playlists += '<select id="playlists" name="playlists">';
+                    if (rows.length) {
+                      for (var i = 0; i < rows.length; i++) {
+                        var playlistname = rows.item(i).playlistname;
+                        playlists += '<option selected value="' + playlistname + '">' + playlistname + '</option>';
+                      }
+                    }
+                    playlists += '</select></label>';
+                    var selectPlaylist = $ionicPopup.show({
+                        template: playlists,
+                        title: '<b>Select playlist:</b>',
+                        scope: $scope,
+                        buttons: [
+                          {
+                            text: '<b>Add</b>',
+                            type: 'button-energized',
+                            onTap: function (e) {
+                              e.preventDefault();
+                              selectPlaylist.close();
+                              playlists = $('#playlists').val();
+                              if (playlists) {
+                                ////add to playlist
+                                cordovaEvents.query('SELECT * FROM playlist where songid="' + $scope.song.id + '" and playlistname="' + playlists + '"', function (rows) {
+                                  if (!rows.length) {
+                                    cordovaEvents.query('insert into playlist(playlistname,songid,name,file,title,album,year,genre,date,cover,duration)values("' + playlists + '",' + $scope.song.id + ',"' + $scope.song.name + '","' + $scope.song.file + '","' + $scope.song.title + '","' + $scope.song.album + '",' + $scope.song.year + ',"' + $scope.song.genre + '","' + $scope.song.date + '","' + $scope.song.cover + '",' + $scope.song.duration + ')', cordovaEvents.nullHandler);
+                                    $scope.inPlaylist = true;
+                                    $scope.$digest();
+                                    $ionicPopup.show({
+                                      template: '<i class="ion-checkmark-circled" style="color:yellow;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Added to Playlist successfully..!',
+                                      title: '<b>Success</b>',
+                                      scope: $scope,
+                                      buttons: [{
+                                          text: '<b>OK</b>',
+                                          type: 'button-energized',
+                                          onTap: function (e) {
+                                          }
+                                        }]
+                                    });
+                                  } else {
+                                    $ionicPopup.show({
+                                      template: '<i class="ion-alert-circled" style="color:green;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Already in playlist..!',
+                                      title: '<b>Warning</b>',
+                                      scope: $scope,
+                                      buttons: [{
+                                          text: '<b>OK</b>',
+                                          type: 'button-balanced',
+                                          onTap: function (e) {
+                                          }
+                                        }]
+                                    });
+                                  }
+                                });
+                              } else {
+                                $ionicPopup.show({
+                                  template: '<i class="ion-alert-circled" style="color:green;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Playlist not selected..!',
+                                  title: '<b>Warning</b>',
+                                  scope: $scope,
+                                  buttons: [{
+                                      text: '<b>OK</b>',
+                                      type: 'button-balanced',
+                                      onTap: function (e) {
+                                      }
+                                    }]
+                                });
+                              }
+                            }
+                          },
+                          {
+                            text: '<b>cancel</b>',
+                            onTap: function (e) {
+                            }
+                          }
+                        ]
+                      });
+                  });
+                }
+              },
+              {
+                text: '<b>cancel</b>',
+                onTap: function (e) {
+                }
+              }
+            ]
+          });
+      } else {
+        $ionicPopup.show({
+          template: '<i class="ion-alert-circled" style="color:red;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please Login..!',
+          title: '<b>Error</b>',
+          scope: $scope,
+          buttons: [{
+              text: '<b>OK</b>',
+              type: 'button-assertive',
+              onTap: function (e) {
+              }
+            }]
+        });
+      }
+    };
+    ///////remove from playlist
+    $scope.removeFromPlaylist = function () {
+      cordovaEvents.query('SELECT * FROM playlist where songid="' + $stateParams.id + '"', function (rows) {
+        if (rows.length) {
+          cordovaEvents.query('delete FROM playlist where songid="' + $stateParams.id + '"', cordovaEvents.nullHandler);
+          $scope.inPlaylist = false;
+          $scope.$digest();
+          $ionicPopup.show({
+            template: '<i class="ion-checkmark-circled" style="color:yellow;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removed successfully..!',
+            title: '<b>Success</b>',
+            scope: $scope,
+            buttons: [{
+                text: '<b>OK</b>',
+                type: 'button-energized',
+                onTap: function (e) {
+                }
+              }]
+          });
+        }
+      });
+    };
+    ///////queue
+    $scope.queue = function () {
+      cordovaEvents.query('SELECT * FROM queue where id="' + $stateParams.id + '"', function (rows) {
+        if (!rows.length) {
+          medialength = media.queue.length;
+          cordovaEvents.query('insert into queue(id,name,file,title,album,year,genre,date,cover,duration,priority)values(' + $scope.song.id + ',"' + $scope.song.name + '","' + $scope.song.file + '","' + $scope.song.title + '","' + $scope.song.album + '",' + $scope.song.year + ',"' + $scope.song.genre + '","' + $scope.song.date + '","' + $scope.song.cover + '",' + $scope.song.duration + ',' + medialength + ')', cordovaEvents.nullHandler);
+          $ionicPopup.show({
+            template: '<i class="ion-checkmark-circled" style="color:yellow;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Added successfully..!',
+            title: '<b>Success</b>',
+            scope: $scope,
+            buttons: [{
+                text: '<b>OK</b>',
+                type: 'button-energized',
+                onTap: function (e) {
+                }
+              }]
+          });
+          media.queue.push($scope.song);
+        } else {
+          var redirectWarn = $ionicPopup.show({
+              template: '<i class="ion-alert-circled" style="color:green;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Already in queue..!',
+              title: '<b>Warning</b>',
+              scope: $scope,
+              buttons: [{
+                  text: '<b>OK</b>',
+                  type: 'button-balanced',
+                  onTap: function (e) {
+                  }
+                }]
+            });
+        }
+      });
+    };
+    ///////download
+    $scope.download = function () {
+      if (cordovaEvents.isLoggedIn) {
+        if (cordovaEvents.isOnline) {
+        } else {
+          $ionicPopup.show({
+            template: '<i class="ion-alert-circled" style="color:red;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please check your connection..!',
+            title: '<b>Error</b>',
+            scope: $scope,
+            buttons: [{
+                text: '<b>OK</b>',
+                type: 'button-assertive',
+                onTap: function (e) {
+                }
+              }]
+          });
+        }
+      } else {
+        $ionicPopup.show({
+          template: '<i class="ion-alert-circled" style="color:red;font-size:3em;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please Login..!',
+          title: '<b>Error</b>',
+          scope: $scope,
+          buttons: [{
+              text: '<b>OK</b>',
+              type: 'button-assertive',
+              onTap: function (e) {
+              }
+            }]
+        });
+      }
+    };
+  }
+]);

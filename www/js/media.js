@@ -1,1 +1,61 @@
-var _0x9afd=["\x6D\x79\x5F\x6D\x65\x64\x69\x61","\x73\x74\x6F\x70\x41\x75\x64\x69\x6F","\x64\x75\x72\x61\x74\x69\x6F\x6E","\x70\x61\x74\x68","\x6F\x6E\x53\x75\x63\x63\x65\x73\x73","\x6F\x6E\x45\x72\x72\x6F\x72","\x6D\x65\x64\x69\x61\x53\x74\x61\x74\x75\x73\x46\x75\x6E\x63\x74\x69\x6F\x6E","\x70\x6C\x61\x79","\x73\x74\x6F\x70","\x70\x6C\x61\x79\x41\x75\x64\x69\x6F\x28\x29\x3A\x41\x75\x64\x69\x6F\x20\x53\x75\x63\x63\x65\x73\x73","\x6C\x6F\x67","\x73\x74\x6F\x70\x52\x65\x63\x6F\x72\x64","\x63\x6F\x64\x65\x3A\x20","\x63\x6F\x64\x65","\x0A","\x6D\x65\x73\x73\x61\x67\x65\x3A\x20","\x6D\x65\x73\x73\x61\x67\x65"];var media={queue:[],my_media:null,my_rec:null,mediaTimer:null,currentPlayingMedia:null,playAudio:function (_0xaedfx2){if(media[_0x9afd[0]]){media[_0x9afd[1]]();} ;if(_0xaedfx2[_0x9afd[2]]){media[_0x9afd[0]]= new Media(_0xaedfx2[_0x9afd[3]],media[_0x9afd[4]],media[_0x9afd[5]],media[_0x9afd[6]]);media[_0x9afd[0]][_0x9afd[7]]();} ;} ,resumeAudio:function (){if(my_media){media[_0x9afd[0]][_0x9afd[7]]();} ;} ,stopAudio:function (){if(media[_0x9afd[0]]){media[_0x9afd[0]][_0x9afd[8]]();} ;} ,onSuccess:function (){console[_0x9afd[10]](_0x9afd[9]);my_rec[_0x9afd[11]]();stopTracker();setStoppedButton();} ,onError:function (_0xaedfx3){alert(_0x9afd[12]+_0xaedfx3[_0x9afd[13]]+_0x9afd[14]+_0x9afd[15]+_0xaedfx3[_0x9afd[16]]+_0x9afd[14]);} ,mySuccess:function (){console[_0x9afd[10]](_0x9afd[9]);} ,myError:function (_0xaedfx3){alert(_0x9afd[12]+_0xaedfx3[_0x9afd[13]]+_0x9afd[14]+_0x9afd[15]+_0xaedfx3[_0x9afd[16]]+_0x9afd[14]);} ,mediaStatusFunction:function (_0xaedfx4){} };
+var media = {
+    queue: [],
+    my_media: null,
+    my_rec: null,
+    mediaTimer: null,
+    currentPlayingMedia:null,
+    playAudio: function(song) {
+        
+        if (media.my_media) {
+            media.stopAudio();
+        }
+        if (song.duration) {
+            media.my_media = new Media(song.path, media.onSuccess, media.onError, media.mediaStatusFunction);
+
+            media.my_media.play();
+            /*var src = "recording.mp3";
+            my_rec = new Media(src, mySuccess, myError);
+            my_rec.startRecord();
+
+            my_media.play({numberOfLoops: 2});
+            my_media.play({playAudioWhenScreenIsLocked: true});
+
+            currentMediaInfo.totalDuration = totaltime;*/
+        }
+    },
+    resumeAudio: function() {
+        if (my_media) {
+            media.my_media.play();
+        }
+    },
+    stopAudio: function() {
+        if (media.my_media) {
+            media.my_media.stop();
+        }
+        /*my_rec.stopRecord();
+        clearInterval(mediaTimer);
+        mediaTimer = null;
+        setStoppedButton*/
+    },
+    onSuccess: function() {
+        console.log("playAudio():Audio Success");
+        my_rec.stopRecord();
+        stopTracker();
+        setStoppedButton();
+    },
+    onError: function(error) {
+        alert('code: ' + error.code + '\n' +
+                'message: ' + error.message + '\n');
+    },
+    mySuccess: function() {
+        console.log("playAudio():Audio Success");
+
+    },
+    myError: function(error) {
+        alert('code: ' + error.code + '\n' +
+                'message: ' + error.message + '\n');
+    },
+    mediaStatusFunction: function(status) {
+
+    }
+};
