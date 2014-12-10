@@ -1,14 +1,16 @@
-<ion-modal-view id="playerModal">
+<ion-modal-view id="playerModal" style="background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url('{{playerBg}}') repeat 0 0; background-attachment:fixed;background-size:100% 100%;">
     <ion-header-bar id="playerModalHead" class="gradient">
-        <h1 class="title" ng-click="closePlayerModal()">My Modal title</h1>
+        <button class="button gradient" style="background: transparent !important; "><img src="{{playerBg}}" style="width:30px;height:30px;position:relative;left:-30%;"/></button>
+        
+        <h1 class="title" ng-click="closePlayerModal()"><marquee ng-bind="playingMedia.title"></marquee></h1>
         <button class="button button-icon icon ion-ios7-minus-outline" style="color:#fff;" 
                 ng-click="data.showDelete = !data.showDelete;"></button>
     </ion-header-bar>
     <ion-content>
         <ion-list class="" show-delete="data.showDelete">
             <ion-item ng-show="true" ng-repeat="song in songs" 
-                      class="item item-thumbnail-left " type="item-text-wrap" 
-                      ng-click="play({{song}})" >
+                      class="item item-thumbnail-left songList" type="item-text-wrap" 
+                      ng-click="play({{song}})" on-hold="openSongPage('/song/{{song.id}}')">
                 <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}" 
                      class="">
                 <h2>{{song.title}}</h2>
@@ -16,32 +18,75 @@
                 <h4>{{ song.album}}</h4>
                 <ion-delete-button class="ion-minus-circled" ng-click="removeFromQueue(song)">
                 </ion-delete-button>
-                <ion-option-button class="" ng-click="openSongPage('/song/{{song.id}}')" style="vertical-align: middle !important;">
-                        <i class="ion-chevron-right assertive" style="font-size:5em;"></i>
-                </ion-option-button>
+                <!--ion-option-button class="" ng-click="openSongPage('/song/{{song.id}}')" style="vertical-align: middle !important;">
+                    <i class="ion-chevron-right assertive" style="font-size:5em;"></i>
+                </ion-option-button-->
             </ion-item>
             <ion-item ng-show="true"
-                      class="item item-thumbnail-left " type="item-text-wrap" 
-                      href="#"  style="border-bottom:0">
+                      class="item item-thumbnail-left empty-songList" type="item-text-wrap" 
+                      href="#"  style="border-bottom:0;border:0 !important;">
 
             </ion-item>
         </ion-list>
     </ion-content>
-    <ion-footer-bar>
+    
+    <ion-footer-bar class="" style="background: transparent;border:0 !important;">
 
-        <div class="bar bar-subfooter range range-energized " style="border:0;">
-            <i class="">0</i>
-            <input type="range" name="volume" min="0" max="100" value="{{slider.rangeValue}}" ng-model="slider.rangeValue">
-            <i class="">100</i>
-        </div>
-        <div class="bar bar-footer">
-            <div style="border:0; width:100%;">
+        <div class="bar bar-subfooter player-bar" style="border:0;">
+            <div style="border:0; width:100%;" class="player">
+                <a href="#" ng-if="decision!=1" ng-click="onRepeat()" class="button button-player-dynamic" style="float:left; color:rgb(202,74,35) !important;"><i class="ion-refresh"></i></a>
+                <a href="#" ng-if="decision!=2" ng-click="onShuffle()" class="button button-player-dynamic" style="float:right; color:rgb(202,74,35) !important;"><i class="ion-shuffle"></i></a>
+                <a href="#" ng-if="decision==1" ng-click="onRepeat()" class="button button-player-dynamic" style="float:left; color:#aaa !important;"><i class="ion-refresh"></i></a>
+                <a href="#" ng-if="decision==2" ng-click="onShuffle()" class="button button-player-dynamic" style="float:right;color:#aaa !important;"><i class="ion-shuffle"></i></a>
+                
                 <center>
-                    <a href="#" class="button button-assertive icon ion-ios7-skipbackward" style="border-radius: 50%;"></a>
-                    <a href="#" class="button button-assertive icon ion-ios7-play" style="border-radius: 50%;"></a>
-                    <a href="#" class="button button-assertive icon ion-ios7-skipforward" style="border-radius: 50%;"></a>
+                    <a href="#" ng-click="backward()" class="button button-player"><i class="ion-ios7-skipbackward "></i></a>
+                    <a href="#" ng-click="resume()" class="button button-player" ng-if="isPlaying!=1"><i class="ion-ios7-play"></i></a>
+                    <a href="#" ng-click="pause()" class="button button-player" ng-if="isPlaying==1"><i class="ion-ios7-pause"></i></a>
+                    <a href="#" ng-click="forward()" class="button button-player"><i class="ion-ios7-skipforward "></i></a>
                 </center>
+
             </div>
+        </div> 
+        <div class="bar bar-footer range range-assertive player-bar" style="border:0;">
+            <i class="tracker-time" id="passedTime"></i>
+            <input type="range" name="volume" min="0" max="100" id="trackerValue" on-tap="seekTo()" style="border:0;">
+            <i class="tracker-time" id="totalTime"></i>
         </div>
     </ion-footer-bar>
+    
+    <style>
+        .tracker-time{
+            border-radius: 50% !important; 
+            color:rgb(202,74,35) !important;
+            border:0 !important;
+            background: transparent !important;
+            font-size:1em;
+        }
+        .player .button-player{
+            border-radius: 50% !important; 
+            color:rgb(202,74,35) !important;
+            border:0 !important;
+            background: transparent !important;
+            font-size:2em;
+        }
+        .player .button-player-dynamic{
+            border-radius: 50% !important; 
+            border:0 !important;
+            background: transparent !important;
+            font-size:2em;
+        }
+        .player-bar{
+            border:0 !important;
+            //background: rgba(202,74,35,.2) !important;   
+        }
+        .songList,.songList a,.songList div{
+            border:0 !important;
+            background: rgba(202,74,35,.2) !important;   
+        }
+        .empty-songList,.empty-songList a{
+            background: transparent !important;   
+        }
+        
+    </style>
 </ion-modal-view>

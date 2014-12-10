@@ -1,10 +1,12 @@
 <ion-view>
 
-    <!--ion-nav-buttons side="left">
-          <button class="button-icon icon  ion-ios7-arrow-back" ng-click="goBack()">
-            Back
-          </button>
-    </ion-nav-buttons-->
+    <ion-nav-buttons side="left">
+        <!--div style="color:#fff;width:200px !important; ">
+            <img src="images/ldpi.png"/>
+            <b style="position:relative; top:-10px;left:10px; font-size:20px;">Top 15</b>
+        </div-->        
+        <b style="position:relative; top:5px;left:10px; font-size:20px;">Top 15</b>
+    </ion-nav-buttons>
 
     <ion-content class="">
 
@@ -12,7 +14,7 @@
             <ion-item ng-show="true" ng-repeat="song in songs" 
                       class="item item-thumbnail-left" type="item-text-wrap" 
                       href="#/song/{{song.id}}" >
-                <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}" 
+                <img ng-src="{{ song.coverpath}}" 
                      class="">
                 <h2>{{song.title}}</h2>
                 <h4>{{song.genre}}</h4>

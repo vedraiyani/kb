@@ -1,5 +1,39 @@
 <ion-view>
-	<ion-content class="padding">
-		
-  	</ion-content>
+    <ion-nav-buttons side="left">
+        <!--div style="color:#fff;width:200px !important; ">
+            <img src="images/ldpi.png"/>
+            <b style="position:relative; top:-10px;left:10px; font-size:20px;">Radio</b>
+        </div-->  
+        <b style="position:relative; top:5px;left:10px; font-size:20px;">Radio</b>
+    </ion-nav-buttons>
+    <ion-content class="padding" style="background: url(images/bg.jpg);background-size: 100% 100%;background-attachment:fixed;">
+        <div id="playcontrols">
+            <center>
+                <a href="" id="playbutton" ng-click="radioPlay();"><img src="images/playbutton.png" style="width:60px;height:60px;"/></a>
+                <a href="" id="activityindicator" ng-click="radioStop();"><img src="images/activityindicator.gif" style="width:60px;height:60px;" /></a>
+                <a href="" id="stopbutton" ng-click="radioStop();"><img src="images/stopbutton.png" style="width:60px;height:60px;" /></a>
+            </center>
+        </div>
+        <div id="textpositiondiv"><center>Time played: <span id="textposition">stopped</span></center></div>
+    </ion-content>
+    <style type="text/css">
+
+        #playcontrols {
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+        #playcontrols #activityindicator, #playcontrols #stopbutton {
+            display: none;
+        }
+
+        #textpositiondiv {
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            font-weight:bold;
+            color: white;
+            width: 100%;
+        }
+    </style>
 </ion-view>

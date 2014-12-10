@@ -1,6 +1,13 @@
 <ion-view>
-    <ion-content class="padding">
-        <div  ng-animate="'animate'">
+    <ion-nav-buttons side="left">
+        <!--div style="color:#fff;width:200px !important; ">
+            <img src="images/ldpi.png"/>
+            <b style="position:relative; top:-10px;left:10px; font-size:20px;">{{genre}}</b>
+        </div--> 
+        <b style="position:relative; top:5px;left:10px; font-size:20px;">{{genre}}</b>
+    </ion-nav-buttons>
+    <ion-content>
+        <!--div  ng-animate="'animate'">
             <div class="row"  ng-repeat="album in albums">
                 <div class="col " ng-repeat="name in album" >
                     <a href="#/albumSong/{{name.name}}" style="text-decoration: none;">
@@ -11,8 +18,16 @@
                 </div>
                 <div class="col " ng-if="album.length == 1"><div class="padding"></div></div>
             </div>
-        </div>
+        </div-->
 
-
+        <ion-list class="" show-delete="data.showDelete">
+            <ion-item ng-show="true" ng-repeat="album in albums"
+                      class="item item-icon-left assertive" type="item-text-wrap" 
+                      href="#/albumSong/{{album.name}}" >
+                <i class="icon ion-music-note"></i>
+                {{album.name}}
+            </ion-item>
+        </ion-list>
+        
     </ion-content>
 </ion-view>

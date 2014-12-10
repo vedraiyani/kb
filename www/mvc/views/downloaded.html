@@ -1,14 +1,93 @@
 <ion-view>
+    <ion-nav-buttons side="left">
+        <!--div style="color:#fff;width:200px !important; ">
+            <img src="images/ldpi.png"/>
+            <b style="position:relative; top:-10px;left:10px; font-size:20px;">Download</b>
+        </div-->  
+        <b style="position:relative; top:5px;left:10px; font-size:20px;">Download</b>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-ios7-minus-outline" style="color:#fff;" 
+                ng-click="data.showDelete = !data.showDelete;"></button>
+    </ion-nav-buttons>
     <ion-content>
-        <ion-list class="">
+        <!--ion-list class="" show-delete="data.showDelete">
+            <ion-item ng-show="true" ng-repeat="song in songs" 
+                      class="item item-thumbnail-left item-button-right songList" type="item-text-wrap" 
+                      ng-click="play({{song}})" on-hold="openSongPage('/song/{{song.id}}')"
+                      percentage="{{song.percentage}}">
+                <img ng-src="{{song.coverpath}}" 
+                     class="">
+                <h2>{{song.id}}{{song.title}}</h2>
+                <h4>{{song.genre}}</h4>
+                <h4>{{ song.album}}</h4>
+
+                <div style="position: absolute;left:0;bottom:15;width:100%;height:10px;">
+                    <progress id="progress" class="{{song.file}}" max="100" value="{{song.loaded}}" style=""></progress>
+                </div>
+                <button class="button" ng-click="action(song)" style="background:transparent !important; border:0 !important;">
+                    <i class="icon ion-android-more"></i>
+                </button>
+                <ion-delete-button class="ion-minus-circled" 
+                                   ng-click="removeDownloaded(song)">
+                </ion-delete-button>
+            </ion-item>
+        </ion-list-->
+        <ion-list class="" show-delete="data.showDelete">
             <ion-item ng-show="true" ng-repeat="song in songs" 
                       class="item item-thumbnail-left" type="item-text-wrap" 
-                      href="#/song/{{song.id}}" >
+                      href="#/song/{{song.id}}" on-hold="action(song);">
                 <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}" 
                      class="">
                 <h2>{{song.title}}</h2>
+                <h4>{{song.genre}}</h4>
+                <h4>{{ song.album}}</h4>
+                <div style="position: absolute;left:0;bottom:15;width:100%;height:10px;">
+                    <progress id="progress" class="{{song.file}}" max="100" value="{{song.loaded}}" style=""></progress>
+                </div>
+                <ion-delete-button class="ion-minus-circled" 
+                                   ng-click="removeDownloaded(song)">
+                </ion-delete-button>
             </ion-item>
         </ion-list>
 
     </ion-content>
+    <style>
+        #progress {
+            height: 10px;
+            width:100%;
+            //margin: 50px auto;
+            display: block;
+            /* Important Thing */
+            -webkit-appearance: none;
+            border: none;
+        }
+
+        /* All good till now. Now we'll style the background */
+        #progress::-webkit-progress-bar {
+            //padding: 1px;
+            box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        /* Now the value part */
+        #progress::-webkit-progress-value {
+            border-radius: 50px;
+            box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+            background:
+                -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+                -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+                -webkit-linear-gradient(left, #ba7448, #c4672d);
+
+            /* Looks great, now animating it */
+            background-size: 25px 14px, 100% 100%, 100% 100%;
+            -webkit-animation: move 5s linear 0 infinite;
+        }
+
+        /* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+
+        @-webkit-keyframes move {
+            0% {background-position: 0px 0px, 0 0, 0 0}
+            100% {background-position: -100px 0px, 0 0, 0 0}
+        }
+    </style>
 </ion-view>
