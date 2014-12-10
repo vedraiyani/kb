@@ -1,6 +1,6 @@
 <ion-modal-view style="position:absolute;left:0;top:0;" id="searchModal">
     <ion-header-bar class="bar bar-header gradient">
-        <button  ng-click="query='';closeSearchModal()" class="button button-icon icon  ion-ios7-arrow-back" style="background:transparent;border:0px;">
+        <button  ng-click="query='';closeSearchModal()" class="button button-icon icon  ion-ios7-arrow-back" style="background:transparent;border:0px; color:white;">
         </button>
         <label class="item-input-wrapper" id="search-input">
             <i class="icon ion-search placeholder-icon"></i>
@@ -23,7 +23,7 @@
     	</ion-refresher-->
         <ion-list class="">
             <ion-item ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" ng-show="query" 
-                      ng-repeat="song in songs| filter:{name:query}" 
+                      ng-repeat="song in songs| filter:{title:query}" 
                       class="item item-thumbnail-left" type="item-text-wrap" 
                       ng-click="gotoSong({{song.id}})" >
                 <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg' }}" 
