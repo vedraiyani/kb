@@ -7,16 +7,115 @@
         <b style="position:relative; top:5px; left:10px; font-size:20px;">Login</b>
     </ion-nav-buttons>
     <ion-content class="padding" style="background: url(images/bg.jpg);background-size: 100% 100%;background-attachment:fixed;">
+
+        <ion-slide-box auto-play="true" does-continue="true" slide-interval="2000">
+            <ion-slide>
+                <div class="box">
+                    <center>
+                        <h1 style="color:#fff; font-size: 18px;font-weight: bold;">WHY LOG IN?</h1> 
+                        <hr style="width:70%;"/>
+                        <p>Simple. It's how you get the most out of Kirtan Bhakri. Oh, and it's free.</p>
+                    </center>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <center>
+                        <h1 style="color:#fff; font-size: 18px;font-weight: bold;">STAR YOUR FAVORITES</h1> 
+                        <hr style="width:70%;"/>
+                        <p>Starring kirtans and kathas makes it quick and easy to keep track of all your favourites in one place.</p>
+                    </center>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <center>
+                        <h1 style="color:#fff; font-size: 18px;font-weight: bold;">ENJOY KIRTANBHAKTI RADIO</h1> 
+                        <hr style="width:70%;"/>
+                        <p>Listen to expertly curated radio stations.</p>
+                    </center>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <center>
+                        <h1 style="color:#fff; font-size: 18px;font-weight: bold;">LISTEN OFFLINE</h1> 
+                        <hr style="width:70%;"/>
+                        <p>With KirtanBhakti, no signal is no problem. Tap once to download kirtans or kathas to your device.</p>
+                    </center>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
         
-
-
-
-
+        <div class="">
+            <div class="row">
+                <div class="col">
+                    <div class="padding rounded-button gradient" ng-click="fblogin()" ng-controller="LoginCtrl" style="background:#145fd7 !important;">
+                        <div style="position:relative;float:left;background: #fff; width: 25px; height:25px; border-radius: 3px;">
+                            <center><i class="ion-social-facebook" style="position:absolute; bottom:-5px; font-size: 25px; color:#145fd7 !important;"></i></center>
+                        </div>
+                        <center>Continue</center>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="" style="font-size:13px; color:#000; font-weight: bold;">
+                        <center>NO FACEBOOK? USE YOUE EMAIL</center>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="padding rounded-button gradient" ui-sref="login">
+                        <center>Login</center>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="padding rounded-button gradient" ui-sref="register">
+                        <center>Register</center>
+                    </div>
+                </div>
+            </div>
+        </div>
     </ion-content>
-    <ion-footer-bar class="gradient">
+    <!--ion-footer-bar class="gradient">
         <div class="button-bar">
             <a style="background: transparent !important;" class="button gradient icon-left ion-android-social-user" href="#/login">Login</a>
             <a style="background: transparent !important;" class="button gradient icon-right ion-android-send" href="#/register">Register</a>
         </div>
-    </ion-footer-bar>
+    </ion-footer-bar-->
+    <style>
+        .scroll{
+            width:100%;
+            height: 100%;
+        }
+        .slider{
+            width:100%;
+            height: 75%;
+        }
+        .box {
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            //background: rgba(255,255,255,.2);
+        }
+        .box center {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            margin-top: -50px;
+            color: #fff;
+        }
+        .box center p{
+            text-shadow: none;
+            font-size:15px;
+        }
+        .rounded-button{
+            border-radius: 3px;
+        }
+        .slider-pager .slider-pager-page{
+            color:#fff !important;
+        }
+    </style>
 </ion-view>
