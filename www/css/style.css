@@ -71,6 +71,6 @@
     border:0px !important;
     text-shadow: none;
     color:rgba(255,255,255,1) !important;
-    background-attachment:fixed;
+    //background-attachment:fixed;
     background-size:100% 100%;
 }
