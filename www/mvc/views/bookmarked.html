@@ -17,7 +17,13 @@
                       href="#/song/{{song.id}}" >
                 <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}" 
                      class="">
-                <h2>{{song.title}}</h2>
+                <h2>{{song.title}}
+                <a ng-click="download({{song}})" class="button" style="font-size: 4em !important;position: absolute; right:55px; background: #fff;border:0;">
+                    <i class="icon ion-android-download" style=""></i>
+                </a>
+                <a ng-click="gotoSong('/song/{{song.id}}')" class="button" style="font-size: 4em !important;position: absolute; right:0; background: #fff;border:0;">
+                    <i class="icon ion-ios7-arrow-forward" style=""></i>
+                </a></h2>
                 <h4>{{song.genre}}</h4>
                 <h4>{{ song.album}}</h4>
                 <ion-delete-button class="ion-minus-circled" 

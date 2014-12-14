@@ -12,45 +12,117 @@
         <button ng-click="showSettings()" class="button icon ion-android-settings" style="background:transparent;border:0px;color:#fff;"></button>
     </ion-nav-buttons>
 
-    <ion-content class="padding">
-        <div class="row">
-            <div class="col "><div class="padding tileshadow gradient rounded-corner" ui-sref="top15"><center>Top 15</center></div></div>
-            <div class="col "><div class="padding tileshadow gradient rounded-corner" ng-controller="SurprisemeCtrl" ng-click="loadQueuePlay()"><center>Surprise Me</center></div></div>
+    <ion-content class="">
+        <div class="row padding">
+            <div class="col padding"></div>
         </div>
-
+        <div class="row padding">
+            <div class="col padding"></div>
+        </div>
+        <div class="row">
+            <div class="col ">
+                <div class="tile-height-3 gradient tileshadow rounded-corner" ui-sref="top15">
+                    <center>
+                        <br/>
+                        <i class="ion-fireball tile-icon"></i><br/>
+                        Top 15
+                    </center>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="tile-height-3 gradient tileshadow rounded-corner" ng-controller="SurprisemeCtrl" ng-click="loadQueuePlay()">
+                    <center>
+                        <br/>
+                        <i class="ion-shuffle tile-icon"></i><br/>
+                        Surprise Me              
+                    </center>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="tile-height-3 tileshadow rounded-corner" ui-sref="downloaded" style="color:rgb(202,74,35);">
+                    <center>
+                        <br/>
+                        <i class="icon ion-ios7-cloud-download tile-icon"></i><br/>
+                        Downloaded
+                    </center>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row padding">
+            <div class="col padding"></div>
+        </div>
+        
         <div class="row">
             <div class="col " ng-if="!loggedIn">
-                <div class="padding tileshadow gradient rounded-corner" id="loginTile" ui-sref="loginMenu">
-                    <center>Login</center>
+                <div class="tile-height-2 tileshadow gradient rounded-corner" id="loginTile" ui-sref="loginMenu">
+                    <center>
+                        Login<br/>
+                        <i class="ion-person tile-icon"></i>
+                    </center>
                 </div>
             </div>
 
-            <div class="col " ng-if="loggedIn && !profilePicture"><div class="padding tileshadow gradient rounded-corner" ui-sref="mystore"><center>My Store</center></div></div>
+            <div class="col " ng-if="loggedIn && !profilePicture">
+                <div class="tile-height-2 tileshadow gradient rounded-corner" ui-sref="mystore">
+                    <center><br/>
+                        My Store<br/>
+                        <i class="ion-person tile-icon"></i>
+                    </center>
+                </div>
+            </div>
 
             <div class="col " ng-if="loggedIn && profilePicture">
-                <div style="background-image:url('{{profilePicture}}') !important;" class="padding tileshadow loginTile rounded-corner" ui-sref="mystore">
-                    <center>My Store</center>
+                <div style="background-image:url('{{profilePicture}}') !important;" class="tile-height-2 tileshadow loginTile rounded-corner" ui-sref="mystore">
+                    <center>
+                        My Store<br/>
+                        <i class="ion-person tile-icon"></i>
+                    </center>
                 </div>
             </div>
 
+            <!--div class="col ">
+                <a href="#/album/kirtan" style="text-decoration: none;">
+                    <div class=" tileshadow gradient rounded-corner">
+                        <center>Kirtan</center>
+                    </div>
+                </a>
+            </div-->
             <div class="col ">
                 <a href="#/album/kirtan" style="text-decoration: none;">
-                    <div class="padding tileshadow gradient rounded-corner">
+                    <div class="tile-height-2 tileshadow rounded-corner loginTile" style="background-image: url('images/kirtan.jpg');">
                         <center>Kirtan</center>
                     </div>
                 </a>
             </div>
         </div>
 
+        
         <div class="row">
             <div class="col ">
                 <a href="#/album/katha" style="text-decoration: none;">
-                    <div class="padding tileshadow gradient rounded-corner">
+                    <div class="tile-height-2 tileshadow gradient rounded-corner">
                         <center>Katha</center>
                     </div>
                 </a>
+
             </div>
-            <div class="col "><div class="padding tileshadow gradient rounded-corner" ui-sref="radio"><center>Radio</center></div></div>
+            <div class="col ">
+                <div class="tile-height-2 gradient tileshadow rounded-corner" ui-sref="radio">
+                    <center>
+                        Radio<br/>
+                        <i class="ion-radio-waves tile-icon"></i>
+                    </center>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row padding">
+            <div class="col padding"></div>
+        </div>
+        
+        <div class="row padding">
+            <div class="col padding"></div>
         </div>
     </ion-content>
     <ion-footer-bar align-title="left" class="gradient"  ng-controller="PlayerCtrl">
@@ -59,5 +131,24 @@
         <button ng-click="resume()" class="button icon ion-ios7-play" ng-if="isPlaying != 1" style="background:transparent;border:0px; color:#fff;"></button>
         <button ng-click="pause()" class="button icon ion-ios7-pause" ng-if="isPlaying == 1" style="background:transparent;border:0px; color:#fff;"></button>
     </ion-footer-bar>
+    <style>
+        .tile-height-2{
+            height:150px !important;
+            margin: 0 !important;
+            font-size:15px !important;
+            padding:10px;
+        }
+        .tile-height-2 .tile-icon{
+            font-size: 6em !important;
+        }
+        .tile-height-3{
+            margin: 0 !important;
+            height:100px !important;
+            font-size:15px !important;
+        }
+        .tile-height-3 .tile-icon{
+            font-size: 3em !important;
+        }
+    </style>
 </ion-view>
 

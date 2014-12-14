@@ -39,7 +39,10 @@
                       href="#/song/{{song.id}}" on-hold="action(song);">
                 <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}" 
                      class="">
-                <h2>{{song.title}}</h2>
+                <h2>{{song.title}}
+                <a ng-click="gotoSong('/song/{{song.id}}')" class="button" style="font-size: 4em !important;position: absolute; right:0; background: #fff;border:0;">
+                    <i class="icon ion-ios7-arrow-forward" style=""></i>
+                </a></h2>
                 <h4>{{song.genre}}</h4>
                 <h4>{{ song.album}}</h4>
                 <div style="position: absolute;left:0;bottom:15;width:100%;height:10px;">

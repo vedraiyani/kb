@@ -22,12 +22,17 @@
 
         <ion-list class="" show-delete="data.showDelete">
             <ion-item ng-show="true" ng-repeat="album in albums"
-                      class="item item-icon-left assertive" type="item-text-wrap" 
+                      class="item item-avtar assertive" type="item-text-wrap" 
                       href="#/albumSong/{{album.name}}" >
-                <i class="icon ion-music-note"></i>
-                {{album.name}}
+                <!--i class="icon ion-music-note"></i-->
+                <img ng-src="{{ servicerooturl + 'covers/' + album.cover + '.jpg'}}" 
+                     class="" style="width:40px; height:40px;">
+                <b style=" position: relative;bottom:15px;">{{album.name}}</b>
+                <a ng-click="loadAlbumToQueue('{{album.name}}')" class="button" style="font-size: 20px !important;position: absolute; right:5px; background: transparent;border:0;">
+                    <i class="icon ion-ios7-play assertive" style=""></i>
+                </a>
             </ion-item>
         </ion-list>
-        
+
     </ion-content>
 </ion-view>
