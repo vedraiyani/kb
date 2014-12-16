@@ -21,7 +21,7 @@
         </div>
         <div class="row">
             <div class="col ">
-                <div style="background-image:url('images/default.png') !important;" class="tile-height-3 loginTile tileshadow rounded-corner" ui-sref="top15">
+                <div style="background-image:url('images/default.png') !important;" class="tile-height-3 loginTile  rounded-corner" ui-sref="top15">
                     <center>
                         <br/>
                         <i class="ion-fireball tile-icon"></i><br/>
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="col ">
-                <div style="background-image:url('images/default.png') !important;" class="tile-height-3 loginTile tileshadow rounded-corner" ng-controller="SurprisemeCtrl" ng-click="loadQueuePlay()">
+                <div style="background-image:url('images/default.png') !important;" class="tile-height-3 loginTile  rounded-corner" ng-controller="SurprisemeCtrl" ng-click="loadQueuePlay()">
                     <center>
                         <br/>
                         <i class="ion-shuffle tile-icon"></i><br/>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="col ">
-                <div class="tile-height-3 tileshadow rounded-corner" ui-sref="downloaded" style="color:rgb(202,74,35);">
+                <div style="background-image:url('images/default.png') !important;" class="tile-height-3 loginTile  rounded-corner" ui-sref="downloaded">
                     <center>
                         <br/>
                         <i class="icon ion-ios7-cloud-download tile-icon"></i><br/>
@@ -55,16 +55,16 @@
         
         <div class="row">
             <div class="col " ng-if="!loggedIn">
-                <div style="background-image:url('images/default.png') !important;" class="tile-height-2 tileshadow loginTile rounded-corner" id="loginTile" ui-sref="loginMenu">
+                <div style="background-image:url('images/default.png') !important;" class="tile-height-2  loginTile rounded-corner" id="loginTile" ui-sref="loginMenu">
                     <center>
-                        Login<br/>
+                        <br/><br/>
                         <i class="ion-person tile-icon"></i>
                     </center>
                 </div>
             </div>
 
             <div class="col " ng-if="loggedIn && !profilePicture">
-                <div class="tile-height-2 tileshadow loginTile rounded-corner" ui-sref="mystore">
+                <div class="tile-height-2  loginTile rounded-corner" ui-sref="mystore">
                     <!--center><br/>
                         My Store<br/>
                         <i class="ion-person tile-icon"></i>
@@ -74,7 +74,7 @@
             </div>
 
             <div class="col " ng-if="loggedIn && profilePicture">
-                <div style="background-image:url('{{profilePicture}}') !important;" class="tile-height-2 tileshadow loginTile rounded-corner" ui-sref="mystore">
+                <div style="background-image:url('{{profilePicture}}') !important;" class="tile-height-2  loginTile rounded-corner" ui-sref="mystore">
                     <center>
                         My Store<br/>
                         <i class="ion-person tile-icon"></i>
@@ -84,16 +84,16 @@
 
             <!--div class="col ">
                 <a href="#/album/kirtan" style="text-decoration: none;">
-                    <div class=" tileshadow gradient rounded-corner">
+                    <div class="  gradient rounded-corner">
                         <center>Kirtan</center>
                     </div>
                 </a>
             </div-->
             <div class="col ">
                 <a href="#/album/kirtan" style="text-decoration: none;">
-                    <div class="tile-height-2 tileshadow rounded-corner loginTile"> <!-- style="background-image: url('images/kirtan.jpg');">
+                    <div class="tile-height-2 rounded-corner loginTile"> <!-- style="background-image: url('images/kirtan.jpg');">
                         <center>Kirtan</center-->
-                        <img src="images/kirtan.png" style="width:100%;height:100%;"/>
+                        <img src="images/kirtan.png" id="kirtanTile" style="width:100%;height:100%;"/>
                     </div>
                 </a>
             </div>
@@ -103,20 +103,20 @@
         <div class="row">
             <div class="col ">
                 <a href="#/album/katha" style="text-decoration: none;">
-                    <div class="tile-height-2 tileshadow loginTile rounded-corner">
+                    <div class="tile-height-2  loginTile rounded-corner">
                         <!--center>Katha</center-->
-                        <img src="images/katha.png" style="width:100%;height:100%;"/>
+                        <img src="images/katha.png" id="kathaTile" style="width:100%;height:100%;"/>
                     </div>
                 </a>
 
             </div>
             <div class="col ">
-                <div class="tile-height-2 loginTile tileshadow rounded-corner" ui-sref="radio">
+                <div class="tile-height-2 loginTile  rounded-corner" ui-sref="radio">
                     <!--center>
                         Radio<br/>
                         <i class="ion-radio-waves tile-icon"></i>
                     </center-->
-                    <img src="images/radio.png" style="width:100%;height:100%;"/>
+                    <img src="images/radio.png" id="radioTile" style="width:100%;height:100%;"/>
                 </div>
             </div>
         </div>
