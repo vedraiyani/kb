@@ -17,7 +17,7 @@
         vedraiyani 
     </author>
 	<preference name="orientation" value="portrait" />
-	<icon src="icon.png" />
+	
 	<gap:plugin name="org.apache.cordova.file"/>
 	<gap:plugin name="org.apache.cordova.file-transfer"/>
 	<gap:plugin name="org.apache.cordova.inappbrowser"/>
@@ -27,9 +27,36 @@
 	<gap:plugin name="org.apache.cordova.dialogs"/>
 	<gap:plugin name="org.apache.cordova.device"/>
 	
-	<feature name="debug-server" required="true">
-    <param name="domain" value="http://192.168.137.1:8081"/>
-    <param name="key" value="1234567890"/>
-  </feature>
+	<!--icon src="icon.png" /-->
+	
+	<!-- iPhone 6 / 6+ -->
+	<icon src="logo/ios/icon-60@3x.png" gap:platform="ios" width="180" height="180" />
+
+	<!-- iPhone / iPod Touch  -->
+	<icon src="logo/ios/icon-60.png" gap:platform="ios" width="60" height="60" />
+	<icon src="logo/ios/icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+
+	<!-- iPad -->
+	<icon src="logo/ios/icon-76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="logo/ios/icon-76@2x.png" gap:platform="ios" width="152" height="152" />
+
+	<!-- Settings Icon -->
+	<icon src="logo/ios/icon-small.png" gap:platform="ios" width="29" height="29" />
+	<icon src="logo/ios/icon-small@2x.png" gap:platform="ios" width="58" height="58" />
+
+	<!-- Spotlight Icon -->
+	<icon src="logo/ios/icon-40.png" gap:platform="ios" width="40" height="40" />
+	<icon src="logo/ios/icon-40@2x.png" gap:platform="ios" width="80" height="80" />
+	
+	<!--android-->
+	<icon src="logo/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="logo/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="logo/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="logo/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+	<icon src="logo/android/xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+
+	<!--window-->
+	<icon src="logo/window/icon.png" gap:platform="winphone" />
+	<icon src="logo/window/tileicon.png" gap:platform="winphone" gap:role="background" />
 	
 </widget>

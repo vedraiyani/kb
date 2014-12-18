@@ -13,7 +13,7 @@
                       ng-click="play({{song}})" on-hold="openSongPage('/song/{{song.id}}')">
                 <img ng-src="{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}" 
                      class="">
-                <h2>{{song.title}}
+                <h2 style="width:65%;">{{song.title}}
                 <a ng-click="download({{song}})" class="button" style="font-size: 4em !important;position: absolute; right:55px; background: #fff;border:0;">
                     <i class="icon ion-android-download" style=""></i>
                 </a>
@@ -21,7 +21,7 @@
                     <i class="icon ion-ios7-arrow-forward" style=""></i>
                 </a></h2>
                 <h4>{{song.genre}}</h4>
-                <h4>{{ song.album}}</h4>
+                <h4 style="width:65%;">{{ song.album}}</h4>
                 <ion-delete-button class="ion-minus-circled" ng-click="removeFromQueue(song)">
                 </ion-delete-button>
                 <!--ion-option-button class="" ng-click="openSongPage('/song/{{song.id}}')" style="vertical-align: middle !important;">
