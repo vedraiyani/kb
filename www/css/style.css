@@ -76,3 +76,20 @@
     //background-attachment:fixed;
     background-size:100% 100%;
 }
+.tile-height-2{
+    height:150px !important;
+    margin: 0 !important;
+    font-size:15px !important;
+    // padding:10px;
+}
+.tile-height-2 .tile-icon{
+    font-size: 6em !important;
+}
+.tile-height-3{
+    margin: 0 !important;
+    height:100px !important;
+    font-size:15px !important;
+}
+.tile-height-3 .tile-icon{
+    font-size: 3em !important;
+}
