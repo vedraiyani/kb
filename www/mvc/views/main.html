@@ -135,5 +135,21 @@
         <button ng-click="resume()" class="button icon ion-ios7-play" ng-if="isPlaying != 1" style="background:transparent;border:0px; color:#fff;"></button>
         <button ng-click="pause()" class="button icon ion-ios7-pause" ng-if="isPlaying == 1" style="background:transparent;border:0px; color:#fff;"></button>
     </ion-footer-bar>
+    
+    <script id="templates/popover.html" type="text/ng-template">
+      <ion-popover-view>
+        <ion-content>
+          <div class="list">
+            <a class="item" href="#">
+              Learn Ionic
+            </a>
+            <a class="item" href="#">
+              Documentation
+            </a>
+          </div>
+        </ion-content>
+      </ion-popover-view>
+    </script>
+    
 </ion-view>
 
