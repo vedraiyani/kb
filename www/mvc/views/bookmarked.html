@@ -30,7 +30,17 @@
                                    ng-click="unmark(song)">
                 </ion-delete-button>
             </ion-item>
+            <ion-item ng-show="true" 
+                      class="item item-thumbnail-left" type="item-text-wrap" >
+            </ion-item>
         </ion-list>
 
     </ion-content>
+    
+    <ion-footer-bar align-title="left" class="gradient"  ng-controller="PlayerCtrl">
+        <button class="button gradient" style="background: transparent !important;"><img src="{{playerBg}}" style="width:30px;height:30px;position:relative;left:-30%;"/></button>
+        <h1 class="title"  id="playerHead" ng-click="openPlayerModal()" ><marquee ng-bind="playingMedia.title"></marquee></h1>
+        <button ng-click="resume()" class="button icon ion-ios7-play" ng-if="isPlaying != 1" style="background:transparent;border:0px; color:#fff;"></button>
+        <button ng-click="pause()" class="button icon ion-ios7-pause" ng-if="isPlaying == 1" style="background:transparent;border:0px; color:#fff;"></button>
+    </ion-footer-bar>
 </ion-view>
