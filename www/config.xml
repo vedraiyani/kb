@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "org.issousa.kirtanbhakti"
         versionCode = "10" 
-        version     = "1.0.0" >
+        version     = "1.0.1" >
 
     <!-- versionCode is optional and Android only -->
 
@@ -17,6 +17,7 @@
         vedraiyani 
     </author>
 	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
 	<gap:splash src="images/loading.jpg" gap:platform="ios" />
 	
 	<gap:plugin name="org.apache.cordova.file"/>
