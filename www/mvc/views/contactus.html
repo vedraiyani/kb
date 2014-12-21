@@ -1,0 +1,35 @@
+<ion-view>
+    <ion-nav-buttons side="left">
+        <!--div style="color:#fff;width:200px !important; ">
+            <img src="images/ldpi.png"/>
+            <b style="position:relative; top:-10px;left:10px; font-size:20px;">{{genre}}</b>
+        </div--> 
+        <b style="position:relative; top:5px;left:10px; font-size:20px;">ContactUs</b>
+    </ion-nav-buttons>
+    <ion-content>
+        <form name="contactusForm" novalidate>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" name="name" ng-disabled="true" id="name" ng-model="name" placeholder="Name" required/>
+                </label>
+                <label class="item item-input">
+                    <input type="email" name="email" ng-disabled="true" id="email" ng-model="email" placeholder="Email" required/>
+                </label>
+                <label class="item item-input">
+                    <textarea name="comment" id="comment" ng-model="comment" placeholder="Comment" required></textarea>
+                </label>
+            </div>
+            <div class="padding">
+                <button class="button button-block gradient"   ng-click="submitForm()"
+                        ng-disabled="contactusForm.email&& contactusForm.email.$invalid ||
+                                    contactusForm.comment&& contactusForm.comment.$invalid||
+                        contactusForm.name && contactusForm.name.$invalid">Submit</button>
+            </div>
+            <!--div class="padding">
+                <button ng-click="fblogin()" class="button button-block button-positive icon-left ion-social-facebook">Login with Facebook</button>
+            </div-->
+
+        </form>
+
+    </ion-content>
+</ion-view>
