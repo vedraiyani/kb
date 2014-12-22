@@ -4,7 +4,7 @@
             <img src="images/ldpi.png"/>
             <b style="position:relative; top:-10px;left:10px; font-size:20px;">{{song.title}}</b>
         </div-->
-        <!--b style="position:relative; top:5px;left:10px; font-size:20px;">{{song.title}}</b-->
+        <b style="width: 100%; height: 22px; overflow: hidden;position:relative; top:5px;left:10px; font-size:20px;">{{song.title}}</b>
     </ion-nav-buttons>
     <ion-content class="songCard" ng-repeat="song in songs" style="background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url('{{ servicerooturl + 'covers/' + song.cover + '.jpg'}}') repeat 0 0; background-attachment:fixed;background-size:100% 100%;">
         <!--div class="row">
