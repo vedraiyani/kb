@@ -17,7 +17,7 @@
         vedraiyani 
     </author>
 	<preference name="orientation" value="portrait" />
-	<preference name="fullscreen" value="true" />
+	<preference name="exit-on-suspend" value="false" />
 	<gap:splash src="images/loading.jpg" gap:platform="ios" />
 	
 	<gap:plugin name="org.apache.cordova.file"/>
@@ -28,6 +28,7 @@
 	<gap:plugin name="org.apache.cordova.vibration"/>
 	<gap:plugin name="org.apache.cordova.dialogs"/>
 	<gap:plugin name="org.apache.cordova.device"/>
+	<gap:plugin name="de.applant.cordova.plugin.local-notification" version="0.7.4" />
 	
 	<!--icon src="icon.png" /-->
 	
