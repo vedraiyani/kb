@@ -20,6 +20,7 @@
 	<preference name="ios-statusbarstyle" value="black-opaque" />
 	<preference name="exit-on-suspend" value="false" />
 	<preference name="fullscreen" value="true" />
+	
 	<feature name="Media">
         <param name="ios-package" value="CDVSound" />
         </feature>
@@ -34,7 +35,7 @@
 	<gap:plugin name="org.apache.cordova.vibration"/>
 	<gap:plugin name="org.apache.cordova.dialogs"/>
 	<gap:plugin name="org.apache.cordova.device"/>
-	<gap:plugin name="de.applant.cordova.plugin.local-notification" />
+	<!--<gap:plugin name="de.applant.cordova.plugin.local-notification" />-->
 	
 	<!--icon src="icon.png" /-->
 	
