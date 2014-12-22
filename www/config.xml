@@ -34,7 +34,7 @@
 	<gap:plugin name="org.apache.cordova.vibration"/>
 	<gap:plugin name="org.apache.cordova.dialogs"/>
 	<gap:plugin name="org.apache.cordova.device"/>
-	<!--gap:plugin name="de.applant.cordova.plugin.local-notification" version="0.7.4" /-->
+	<gap:plugin name="de.applant.cordova.plugin.local-notification" version="0.7.4" />
 	
 	<!--icon src="icon.png" /-->
 	
