@@ -20,6 +20,9 @@
 	<preference name="ios-statusbarstyle" value="black-opaque" />
 	<preference name="exit-on-suspend" value="false" />
 	<preference name="fullscreen" value="true" />
+	<feature name="Media">
+        <param name="ios-package" value="CDVSound" />
+        </feature>
 	
 	<!--gap:splash src="images/loading.jpg" gap:platform="ios" /-->
 	
