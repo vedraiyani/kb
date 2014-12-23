@@ -19,7 +19,11 @@
 	<preference name="orientation" value="portrait" />
 	<preference name="ios-statusbarstyle" value="black-opaque" />
 	<preference name="exit-on-suspend" value="false" />
-	<preference name="fullscreen" value="true" />
+	<!--<preference name="fullscreen" value="true" />-->
+	
+	<!--<feature name="Media">
+        <param name="ios-package" value="CDVSound" />
+        </feature>-->
 	
 	<!--gap:splash src="images/loading.jpg" gap:platform="ios" /-->
 	
@@ -31,7 +35,7 @@
 	<gap:plugin name="org.apache.cordova.vibration"/>
 	<gap:plugin name="org.apache.cordova.dialogs"/>
 	<gap:plugin name="org.apache.cordova.device"/>
-	<!--gap:plugin name="de.applant.cordova.plugin.local-notification" version="0.7.4" /-->
+	<!--<gap:plugin name="de.applant.cordova.plugin.local-notification" />-->
 	
 	<!--icon src="icon.png" /-->
 	
