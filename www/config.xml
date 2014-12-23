@@ -19,7 +19,7 @@
 	<preference name="orientation" value="portrait" />
 	<preference name="ios-statusbarstyle" value="black-opaque" />
 	<preference name="exit-on-suspend" value="false" />
-	<preference name="fullscreen" value="true" />
+	<!--<preference name="fullscreen" value="true" />-->
 	
 	<!--<feature name="Media">
         <param name="ios-package" value="CDVSound" />
