@@ -13,8 +13,8 @@
         Play kirtan and bhajan in your pocket anywhere, anytime 
     </description>
 
-    <author href="http://www.qcyclone.com" email="info@qcyclone.com">
-        vedraiyani 
+    <author href="http://www.issousa.org" email="support@issousa.org">
+        issousa
     </author>
 	<!--preference name="phonegap-version" value="4.0.0" /-->
 	<preference name="orientation" value="portrait" />
@@ -22,9 +22,9 @@
 	<preference name="exit-on-suspend" value="false" />
 	<!--<preference name="fullscreen" value="true" />-->
 	
-	<!--<feature name="Media">
+	<feature name="Media">
         <param name="ios-package" value="CDVSound" />
-        </feature>-->
+        </feature>
 	
 	<!--gap:splash src="images/loading.jpg" gap:platform="ios" /-->
 	
