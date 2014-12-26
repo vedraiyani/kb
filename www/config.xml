@@ -38,6 +38,7 @@
 	<gap:plugin name="org.apache.cordova.device"/>
 	<!--<gap:plugin name="de.applant.cordova.plugin.local-notification" />-->
 	<gap:plugin name="com.cordova.background-audio" source="plugins.cordova.io"/>
+	<gap:plugin name="com.cordova.plugin.localNotificationPlugin" source="plugins.cordova.io"/>
 	
 	<!--icon src="icon.png" /-->
 	
