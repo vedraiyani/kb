@@ -21,6 +21,7 @@
         <script src="js/jquery-1.11.0.js"></script>
         <script src="js/jquery-migrate-1.2.1.js"></script>
         <script src="js/date.js"></script>
+        <script src="js/ga.js"></script>
 
         <script src="js/openfb.js"></script>
         <!-- cordova script (this will be a 404 during development) -->
@@ -76,6 +77,10 @@
     </ion-nav-bar>
 
     <ion-nav-view></ion-nav-view>
+
+    <div id="loadingBg" style="background:#000; position:absolute;width:100%; height:100%;z-index:10;">
+        <img src="images/loading.jpg" style="width:100%; height:100%;"/>
+    </div>
 
     <div ng-controller="StartupLoaderCtrl">
     </div>
