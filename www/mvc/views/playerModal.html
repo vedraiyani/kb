@@ -1,4 +1,4 @@
-<ion-modal-view id="playerModal" style="background: linear-gradient(to bottom, rgba(255,255,255,0.7) 100%,rgba(255,255,255,0.7) 100%), url('{{playerBg}}') repeat 0 0; background-size:100% 100%;width: 100%;height: 100%;left: 0;top: 0;">
+<ion-modal-view ng-if="radioPlaying==false" id="playerModal" style="background: linear-gradient(to bottom, rgba(255,255,255,0.7) 100%,rgba(255,255,255,0.7) 100%), url('{{playerBg}}') repeat 0 0; background-size:100% 100%;width: 100%;height: 100%;left: 0;top: 0;">
     <ion-header-bar id="playerModalHead" class="gradient">
         <button on-tap="closePlayerModal()" class="button gradient" style="background: transparent !important; ">
             <img src="{{playerBg}}" style="width:30px;height:30px;position:relative;left:-30%;"/>
@@ -104,5 +104,61 @@
             background: transparent !important;   
         }
 
+    </style>
+</ion-modal-view>
+
+
+
+<!--radio-->
+<ion-modal-view ng-if="radioPlaying==true">
+    <ion-header-bar id="playerModalHead" class="gradient">
+        <button on-tap="closePlayerModal()" class="button gradient" style="background: transparent !important; ">
+            <img src="images/icon.png" style="width:30px;height:30px;position:relative;left:-30%;"/>
+            <div style="position: absolute;width:30px;height:30px; background: rgb(0,0,0);opacity: .2;top:0;left:0;font-size: 32px;">
+                <i class="ion-close-round"></i>
+            </div>
+        </button>
+
+        <h1 class="title" on-tap="closePlayerModal()">Radio</h1>
+    </ion-header-bar>
+    <ion-content class="padding" style="background: url(images/bg.jpg);background-size: 100% 100%;background-attachment:fixed;">
+        <div id="playcontrols">
+            <center>
+                <a href="" id="playbutton" ng-click="radioPlay();"><img src="images/playbutton.png" style="width:60px;height:60px;"/></a>
+                <a href="" id="activityindicator" ng-click="radioStop();"><img src="images/activityindicator.gif" style="width:60px;height:60px;" /></a>
+                <a href="" id="stopbutton" ng-click="radioStop();"><img src="images/stopbutton.png" style="width:60px;height:60px;" /></a>
+            </center>
+        </div>
+        <!--div id="textpositiondiv"><center>Time played: <span id="textposition">stopped</span></center></div-->
+    </ion-content>
+    <style type="text/css">
+
+        #playcontrols {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            top:61% !important;
+        }
+        #playcontrols #activityindicator, #playcontrols #stopbutton {
+            display: none;
+        }
+
+        #textpositiondiv {
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            font-weight:bold;
+            color: white;
+            width: 100%;
+            top:75% !important;
+        }
+.scroll{
+            width:100%;
+            height: 100%;
+        }
+        .slider{
+            width:100%;
+            height: 100%;
+        }
     </style>
 </ion-modal-view>
