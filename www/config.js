@@ -6,7 +6,7 @@ var config = {
     fbAppId: '381831755318109',
     fbMessage: 'Kirtan Bhakti',
     AppInfo: {
-        version: "1.0.1",
+        version: "1.0.2",
         author: "vedraiyani",
         description: "http://www.qcyclone.com"
     }
